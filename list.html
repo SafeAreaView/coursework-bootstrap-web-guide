@@ -7,49 +7,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CourseWork</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body style="background-color:#F7F7F9;">
-<div class="container">
-    <h1 style="padding-top: 2em">Приветствуем тебя на первом уроке по bootstrap</h1>
-    <p>Начнём с теории <br>
-    Зададимся вопросом что такое bootstrap?</p>
-    
-    <div class="col p-2">
-    <b> Bootstrap это самой популярной в мире платформой для создания адаптивных сайтов, ориентированных на мобильные устройства, с jsDelivr и шаблонами страниц.</b>
+    <div class="container">
+        <h1 style="padding-top: 2">Приветствуем тебя на первом уроке по bootstrap</h1>
+        <p>Начнём с теории <br>
+            Зададимся вопросом что такое bootstrap?</p>
+
+        <div class="col" style=" padding-left:20px;">
+            <b> Bootstrap это самой популярной в мире платформой для создания адаптивных сайтов, ориентированных на
+                мобильные устройства, с jsDelivr и шаблонами страниц.</b>
+        </div>
+
+        <div class="bd-content ps-lg-4">
+
+
+            <h2 id="quick-start">Быстрый старт<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                    href="#quick-start" style="padding-left: 0.375em;"></a></h2>
+            <p>Хотите использовать Бутстрап в своем проекте? Используйте jsDelivr, бесплатную CDN с открытым исходным
+                кодом. Нужна система управления пакетами или исходники Bootstrap? <a
+                    href="/docs/5.1/getting-started/download/">Перейдите на страницу загрузки</a>.</p>
+
+            <h3 id="css">CSS<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#css"
+                    style="padding-left: 0.375em;"></a></h3>
+            <p>Скопируйте и вставьте часть кода <code>&lt;link&gt;</code> в свой <code>&lt;head&gt;</code> перед всеми
+                другими таблицами стилей, чтобы загрузить наш CSS.</p>
+            <div class="bd-clipboard"></div>
+            <div class="highlight">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;</span>
+            </code></pre>
+            </div>
+
+            <h3 id="js">JS<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#js"
+                    style="padding-left: 0.375em;"></a></h3>
+            <p>Многие из наших компонентов требуют использовать для работы JavaScript. В частности, для них требуются
+                наши собственные плагины JavaScript и <a href="https://popper.js.org/"
+                    rel="nofollow noopener">Popper</a>. Поместите <strong>один из следующих тегов
+                    <code>&lt;script&gt;</code></strong> в конце страницы, прямо перед закрывающим тегом
+                <code>&lt;/body&gt;</code>, чтобы включить их.</p>
+
+            <h4 id="bundle">Пакетное подключение<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                    href="#bundle" style="padding-left: 0.375em;"></a></h4>
+            <p>Включите каждый плагин Bootstrap JavaScript в один из двух наших пакетов. Оба файла, и
+                <code>bootstrap.bundle.js</code> и <code>bootstrap.bundle.min.js</code> включают в себя <a
+                    href="https://popper.js.org/" rel="nofollow noopener">Popper</a> для наших всплывающих подсказок и
+                всплывающих окон. Для получения дополнительной информации о том, что входит в Bootstrap, смотрите раздел
+                <a href="/docs/5.1/getting-started/contents/#precompiled-bootstrap">содержание</a>.</p>
+            <div class="bd-clipboard"></div>
+            <div class="highlight">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+            </code></pre>
+            </div>
+
+            <h4 id="separate">Раздельное подключение<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                    href="#separate" style="padding-left: 0.375em;"></a></h4>
+            <p>Если вы решите использовать отдельные скрипты, сначала должен быть подключен Popper (если вы используете
+                всплывающие подсказки или всплывающие окна), а затем наши плагины JavaScript.</p>
+            <div class="bd-clipboard"></div>
+            <div class="highlight">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+            </code></pre>
+            </div>
+
+            <h4 id="modules">Модули<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#modules"
+                    style="padding-left: 0.375em;"></a></h4>
+            <p>Если вы используете <code>&lt;script type="module"&gt;</code>, смотрите раздел <a
+                    href="/docs/5.1/getting-started/javascript/#using-bootstrap-as-a-module">Использование Bootstrap в
+                    качестве модуля</a>.</p>
+
+            <h4 id="components">Компоненты<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                    href="#components" style="padding-left: 0.375em;"></a></h4>
+            <p>Любопытно, какие компоненты явно требуют наши JavaScript и Popper.js? Нажмите ссылку «Показать
+                компоненты» ниже. Если вы не уверены в том, как правильно написать «коренную» структуру страницы, можете
+                использовать наши шаблоны.</p>
+            <details>
+                <summary class="text-primary mb-3">Показать компоненты, требующие JavaScript</summary>
+                <ul>
+                    <li>Уведомления отмены</li>
+                    <li>Кнопки изменения состояний и чекбоксов/"радио"</li>
+                    <li>Карусель для поведения "слайд", элементы контроля и индикаторы</li>
+                    <li>Коллапс для изменения видимости содержимого</li>
+                    <li>Выпадающие элементы для отображения и расположения (также требует <a rel="nofollow noopener"
+                            href="https://popper.js.org/">Popper</a>)</li>
+                    <li>Модальные окна для отображения, расположения и создания поведения прокрутки</li>
+                    <li>Навбар для расширения нашего плагина коллапса для придания отзывчивого поведения</li>
+                    <li>Выплывающие подсказки и окна для отображения и расположения (также требует <a
+                            rel="nofollow noopener" href="https://popper.js.org/">Popper</a>)</li>
+                    <li>Отслеживание прокрутки и обновления навигации</li>
+                </ul>
+            </details>
+
+
+            <h2 id="starter-template">Стартовый шаблон<a class="anchorjs-link " aria-label="Anchor"
+                    data-anchorjs-icon="#" href="#starter-template" style="padding-left: 0.375em;"></a></h2>
+            <p>Убедитесь, что ваши страницы сверстаны в соответствии с последними стандартами дизайна и разработки. Это
+                означает использование HTML5 и включение метатега области просмотра для правильного «отзывчивого»
+                поведения страниц. Вот как должены выглядеть ваши страницы:</p>
+            <div class="bd-clipboard"></div>
+            <div class="highlight">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+            <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"ru"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+                <span class="c">&lt;!-- Обязательные метатеги --&gt;</span>
+                <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+            
+                <span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
+                <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;</span>
+            
+                <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Привет мир!<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Привет мир!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+            
+                <span class="c">&lt;!-- Дополнительный JavaScript; выберите один из двух! --&gt;</span>
+            
+                <span class="c">&lt;!-- Вариант 1: Bootstrap в связке с Popper --&gt;</span>
+                <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+            
+                <span class="c">&lt;!-- Вариант 2: Bootstrap JS отдельно от Popper
+            </span><span class="c">    &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"&gt;&lt;/script&gt;
+            </span><span class="c">    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"&gt;&lt;/script&gt;
+            </span><span class="c">    --&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+            </code></pre>
+            </div>
+
+            <h3 class="pb-3" >Вот как это выглядит в песочнице</h3>
+
+
     </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo">
-                А вот и сам тест
-            </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-             data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <script async src="//jsfiddle.net/777BARBAROSSA777/a69kq0n8/6/embed/html,result/"></script>
+  <div class="container-fluid"></div>
+
+    <div class="accordion" id="accordionExample">
+       
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    разверни меня
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <script async src="//jsfiddle.net/777BARBAROSSA777/a69kq0n8/18/embed/html,result/"></script>
+                </div>
             </div>
         </div>
     </div>
+    
 
-</div>
- 
-
-<div class="fixed-bottom">
-    <div class="progress">
-        <div class="progress-bar  progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="5"
-             aria-valuemin="0" aria-valuemax="100" style="width: 5%">5%
-        </div>
+    <h4>Your test</h4>
+    <h3>Try yourself</h3>
+    <div class="question">
+      <p>Do you have..</p>
+      <input type="radio" name="r1" id="Answer"><label>Home</label>
+      <input type="radio" name="r1" id="Answer"><label>Sity</label>
+      <input type="radio" name="r1" id="Answer"><label>Advanture</label>
     </div>
-</div>
+  
+    <div class="question">
+      <p>Do you have..</p>
+      <input type="radio" name="r2" id="Answer"><label>Home</label>
+      <input type="radio" name="r2" id="Answer"><label>Sity</label>
+      <input type="radio" name="r2" id="Answer"><label>Advanture</label>
+    </div>
+  
+    <div class="question">
+      <p>Do you have..</p>
+      <input type="radio" name="r3" id="Answer"><label>Home</label>
+      <input type="radio" name="r3" id="Answer"><label>Sity</label>
+      <input type="radio" name="r3" id="Answer"><label>Advanture</label>
+    </div>
+  
+    <div class="question">
+      <p>Do you have..</p>
+      <input type="radio" name="r4" id="Answer"><label>Home</label>
+      <input type="radio" name="r4" id="Answer"><label>Sity</label>
+      <input type="radio" name="r4" id="Answer"><label>Advanture</label>
+    </div>
+    <button id="btnResutl">Result</button>
+    <div id="resultFild"></div>
+  
+    <script>
+        var btnResutl = document.getElementById('btnResutl');
+      var resultFild = document.getElementById('resultFild');
+  
+      var firstAnswer = [2, 6, 9, 2],
+        secondAnswer = [5, 8, 1, 7],
+        thirdAnswer = [6, 1,5, 3], 
+        fourAnswer = [4, 2, 7, 3];
+      var arr = [];
+      var arr2 = [];
+  
+    var inputFild = document.getElementsByTagName('input');
+      btnResutl.addEventListener('click', function(){
+        for (var i = 0; i < inputFild.length; i++) {
+          if(inputFild[i].checked){
+            var sum = arr.push(firstAnswer[i] + secondAnswer[i])
+            var sumTwo = arr2.push(thirdAnswer[i] + fourAnswer[i])
+          }
+          resultFild.innerHTML = sum + ' баллов' 
+        }
+      })
+    </script>
+  
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+
+
+        <div class="fixed-bottom">
+            <div class="progress">
+                <div class="progress-bar  progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="5"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 5%">5%
+                </div>
+            </div>
+        </div>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-</script>
+    </script>
 </body>
 
 </html>
