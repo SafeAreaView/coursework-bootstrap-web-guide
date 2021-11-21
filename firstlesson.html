@@ -139,86 +139,31 @@
 
             <h3 class="pb-3" >Вот как это выглядит в песочнице</h3>
 
+            <script async src="//jsfiddle.net/777BARBAROSSA777/a69kq0n8/21/embed/html,result/"></script>
 
-    </div>
-  <div class="container-fluid"></div>
-
-    <div class="accordion" id="accordionExample">
-       
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    разверни меня
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <script async src="//jsfiddle.net/777BARBAROSSA777/a69kq0n8/18/embed/html,result/"></script>
-                </div>
-            </div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Пройдите тест
+  </button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+            <iframe src="quiz.html" width="480" height="720" class="quiz-frame"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
     </div>
-    
-
-    <h4>Your test</h4>
-    <h3>Try yourself</h3>
-    <div class="question">
-      <p>Do you have..</p>
-      <input type="radio" name="r1" id="Answer"><label>Home</label>
-      <input type="radio" name="r1" id="Answer"><label>Sity</label>
-      <input type="radio" name="r1" id="Answer"><label>Advanture</label>
-    </div>
-  
-    <div class="question">
-      <p>Do you have..</p>
-      <input type="radio" name="r2" id="Answer"><label>Home</label>
-      <input type="radio" name="r2" id="Answer"><label>Sity</label>
-      <input type="radio" name="r2" id="Answer"><label>Advanture</label>
-    </div>
-  
-    <div class="question">
-      <p>Do you have..</p>
-      <input type="radio" name="r3" id="Answer"><label>Home</label>
-      <input type="radio" name="r3" id="Answer"><label>Sity</label>
-      <input type="radio" name="r3" id="Answer"><label>Advanture</label>
-    </div>
-  
-    <div class="question">
-      <p>Do you have..</p>
-      <input type="radio" name="r4" id="Answer"><label>Home</label>
-      <input type="radio" name="r4" id="Answer"><label>Sity</label>
-      <input type="radio" name="r4" id="Answer"><label>Advanture</label>
-    </div>
-    <button id="btnResutl">Result</button>
-    <div id="resultFild"></div>
-  
-    <script>
-        var btnResutl = document.getElementById('btnResutl');
-      var resultFild = document.getElementById('resultFild');
-  
-      var firstAnswer = [2, 6, 9, 2],
-        secondAnswer = [5, 8, 1, 7],
-        thirdAnswer = [6, 1,5, 3], 
-        fourAnswer = [4, 2, 7, 3];
-      var arr = [];
-      var arr2 = [];
-  
-    var inputFild = document.getElementsByTagName('input');
-      btnResutl.addEventListener('click', function(){
-        for (var i = 0; i < inputFild.length; i++) {
-          if(inputFild[i].checked){
-            var sum = arr.push(firstAnswer[i] + secondAnswer[i])
-            var sumTwo = arr2.push(thirdAnswer[i] + fourAnswer[i])
-          }
-          resultFild.innerHTML = sum + ' баллов' 
-        }
-      })
-    </script>
-  
-
-
+  </div>
+ <div style="padding-top: 500px;" ></div>
 
 
         <div class="fixed-bottom">
