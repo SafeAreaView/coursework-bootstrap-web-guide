@@ -1,12 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Третий урок</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body>
-    
+
+<body style="background-image: url(/ocean.jpg);">
+    <div class="container" style="background-color:#F7F7F9; color: #2B2D42; ">
+        <h2 style="text-align: center;">И так перейдём уже непосредственно к наполнению сайта</h2>
+        <main class="bd-main order-1">
+            <h1 class="bd-title" style="padding-left: 2em;" id="content">Типографика</h1>
+            <p class="bd-lead" style="padding-left: 1em;">Документация и примеры типографики Bootstrap, включая
+                глобальные настройки, заголовки, текст документа, списки и т.д.</p>
+
+
+            <h2 id="global-settings">Глобальные настройки<a class="anchorjs-link " aria-label="Anchor"
+                    data-anchorjs-icon="#" href="#global-settings" style="padding-left: 0.375em;"></a></h2>
+
+            <p>Bootstrap предустанавливает глобальные стили отображения, типографии и ссылок. Когда нужно настроить
+                больше элементов, проверьте наши <a href="https://bootstrap-4.ru/docs/5.1/utilities/text/">классы
+                    текстовых утилит</a>.
+            </p>
+            <ul>
+                <li>Используйте набор встроенных шрифтов,
+                    который выберет лучшее семейство шрифтов <code>font-family</code> для всех ОС и девайсов.</li>
+                <li>Для более широкой и доступной шкалы шрифтов используется шрифт браузера по умолчанию
+                    <code>font-size</code> (обычно 16px), так что юзеры могут сами настроить шрифты через настройки
+                    шрифтов браузера.</li>
+                <li>Используйте атрибуты <code>$font-family-base</code>, <code>$font-size-base</code> и
+                    <code>$line-height-base</code> как типографическую базу для <code>&lt;body&gt;</code>.</li>
+                <li>Задавайте глобальные цвета ссылок через <code>$link-color</code> и применяйте подчеркивание
+                    ссылок только в <code>:hover</code>.</li>
+                <li>Используйте <code>$body-bg</code> для задания <code>background-color</code> для
+                    <code>&lt;body&gt;</code> (по умолчанию стоит <code>#fff</code>).</li>
+            </ul>
+            <p>Эти стили находятся в <code>_reboot.scss</code>, а глобальные переменные определены в
+                <code>_variables.scss</code>. Задавайте <code>$font-size-base</code> в <code>rem</code>.</p>
+
+            <h2 id="headings">Заголовки<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                    href="#headings" style="padding-left: 0.375em;"></a></h2>
+            <p>Доступны все HTML-заголовки от <code>&lt;h1&gt;</code> до <code>&lt;h6&gt;</code>.</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Заголовок</th>
+                        <th>Пример</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>&lt;h1&gt;&lt;/h1&gt;</code>
+                        </td>
+                        <td><span class="h1">h1. Bootstrap heading</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;h2&gt;&lt;/h2&gt;</code>
+                        </td>
+                        <td><span class="h2">h2. Bootstrap heading</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;h3&gt;&lt;/h3&gt;</code>
+                        </td>
+                        <td><span class="h3">h3. Bootstrap heading</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;h4&gt;&lt;/h4&gt;</code>
+                        </td>
+                        <td><span class="h4">h4. Bootstrap heading</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;h5&gt;&lt;/h5&gt;</code>
+                        </td>
+                        <td><span class="h5">h5. Bootstrap heading</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;h6&gt;&lt;/h6&gt;</code>
+                        </td>
+                        <td><span class="h6">h6. Bootstrap heading</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="highlight">
+                <pre
+                    class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>h1. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>h2. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>h3. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>h4. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>h5. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>h6. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span></code></pre>
+            </div>
+
+            <p>Если вы хотите, чтобы стилизация шрифта совпадала с заголовком, но не можете использовать
+                соотнесенный HTML-элемент, классы <code>.h1</code> - <code>.h6</code> также доступны.</p>
+            <div class="bd-example">
+                <p class="h1">h1. Bootstrap heading</p>
+                <p class="h2">h2. Bootstrap heading</p>
+                <p class="h3">h3. Bootstrap heading</p>
+                <p class="h4">h4. Bootstrap heading</p>
+                <p class="h5">h5. Bootstrap heading</p>
+                <p class="h6">h6. Bootstrap heading</p>
+            </div>
+            <div class="highlight">
+                <pre
+                    class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h1"</span><span class="p">&gt;</span>h1. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h2"</span><span class="p">&gt;</span>h2. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h3"</span><span class="p">&gt;</span>h3. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h4"</span><span class="p">&gt;</span>h4. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h5"</span><span class="p">&gt;</span>h5. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h6"</span><span class="p">&gt;</span>h6. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+            </div>
+            <div class="bd-example">
+                <h3>Заголовок отображения
+                    <small class="text-muted">С выцветшим "второстепенным" текстом</small>
+                </h3>
+            </div>
+            <div class="highlight">
+                <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>
+        Заголовок отображения
+        <span class="p">&lt;</span><span class="nt">small</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-muted"</span><span class="p">&gt;</span>С выцветшим "второстепенным" текстом<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span></code></pre>
+            </div>
+
+            <h2 id="display-headings">Отображение заголовков<a class="anchorjs-link " aria-label="Anchor"
+                    data-anchorjs-icon="#" href="#display-headings" style="padding-left: 0.375em;"></a></h2>
+            <p>Традиционные заголовки созданы для «работы» «в глубине» вашей страницы. Если вам необходимо выделить
+                заголовок, используйте <strong>отображение заголовков</strong> - большего размера, слегка более
+                вычурный.</p>
+            <div class="bd-example">
+                <div class="display-1 pb-3 mb-3 border-bottom">Отображение 1</div>
+                <div class="display-2 pb-3 mb-3 border-bottom">Отображение 2</div>
+                <div class="display-3 pb-3 mb-3 border-bottom">Отображение 3</div>
+                <div class="display-4 pb-3 mb-3 border-bottom">Отображение 4</div>
+                <div class="display-5 pb-3 mb-3 border-bottom">Отображение 5</div>
+                <div class="display-6">Отображение 6</div>
+            </div>
+            <div class="highlight">
+                <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-1"</span><span class="p">&gt;</span>Отображение 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-2"</span><span class="p">&gt;</span>Отображение 2<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-3"</span><span class="p">&gt;</span>Отображение 3<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-4"</span><span class="p">&gt;</span>Отображение 4<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-5"</span><span class="p">&gt;</span>Отображение 5<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-6"</span><span class="p">&gt;</span>Отображение 6<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      </code></pre>
+            </div>
+
+            <h2 id="lead">«Лид»<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#lead"
+                    style="padding-left: 0.375em;"></a></h2>
+            <p>Создайте выделяющийся, отстоящий от основной массы параграф добавлением класса <code>.lead</code>.
+            </p>
+            <div class="bd-example">
+                <p class="lead">
+                    Это ведущий абзац. Он выделяется из обычных абзацев.
+                </p>
+            </div>
+            <div class="highlight">
+                <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"lead"</span><span class="p">&gt;</span>
+        Это ведущий абзац. Он выделяется из обычных абзацев.
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+            </div>
+
+
+            <h2 id="inline-text-elements">Строчные текстовые элементы<a class="anchorjs-link " aria-label="Anchor"
+                    data-anchorjs-icon="#" href="#inline-text-elements" style="padding-left: 0.375em;"></a></h2>
+
+            <p>Стили для обычных блочных элементов HTML5.</p>
+            <div class="bd-example">
+                <p>Тег-выделитель для <mark>подсветки</mark> текста.</p>
+                <p><del>Удаленный текст.</del></p>
+                <p><s>Зачеркнутый.</s></p>
+                <p><ins>Строка - дополнение к документу.</ins></p>
+                <p><u>Подчеркнутый текст</u></p>
+                <p><small>Мелкий шрифт (типа нижний индекс)</small></p>
+                <p><strong>Жирный текст.</strong></p>
+                <p><em>Курсив.</em></p>
+            </div>
+
+            <div class="highlight">
+                <pre
+                    class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Тег-выделитель для <span class="p">&lt;</span><span class="nt">mark</span><span class="p">&gt;</span>подсветки<span class="p">&lt;/</span><span class="nt">mark</span><span class="p">&gt;</span> текста.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">del</span><span class="p">&gt;</span>Удаленный текст.<span class="p">&lt;/</span><span class="nt">del</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">s</span><span class="p">&gt;</span>Зачеркнутый.<span class="p">&lt;/</span><span class="nt">s</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">ins</span><span class="p">&gt;</span>Строка - дополнение к документу.<span class="p">&lt;/</span><span class="nt">ins</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">u</span><span class="p">&gt;</span>Подчеркнутый текст<span class="p">&lt;/</span><span class="nt">u</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">small</span><span class="p">&gt;</span>Мелкий шрифт (типа нижний индекс).<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>Жирный текст.<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">em</span><span class="p">&gt;</span>Курсив.<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+            </div>
+
+            <p>Помните, что эти теги должны использоваться в семантических целях:</p>
+            <ul>
+                <li><code>&lt;mark&gt;</code> - используется для текста, который помечен или выделен для справки или
+                    обозначений.</li>
+                <li><code>&lt;small&gt;</code> - используется для комментариев и мелкого шрифта, такого как
+                    авторские права и юридический текст.</li>
+                <li><code>&lt;s&gt;</code> - используется для элементов, которые больше не релевантены или более не
+                    точены.</li>
+                <li><code>&lt;u&gt;</code> - используется для обозначения диапазона встроенного текста, с которого
+                    которого должена быть ссылка на аннотацию.</li>
+            </ul>
+
+            <p>Если Вы хотите стилизовать свой текст, Вы должны вместо этого использовать следующие классы:</p>
+            <ul>
+                <li><code>.mark</code> будут применять те же стили, что и <code>&lt;mark&gt;</code>.</li>
+                <li><code>.small</code> будут применять те же стили, что и <code>&lt;small&gt;</code>.</li>
+                <li><code>.text-decoration-underline</code> будут применять те же стили, что и
+                    <code>&lt;u&gt;</code>.</li>
+                <li><code>.text-decoration-line-through</code> будут применять те же стили, что и
+                    <code>&lt;s&gt;</code>.</li>
+            </ul>
+
+            <p>Можете свободно использовать теги <code>&lt;b&gt;</code> и <code>&lt;i&gt;</code> в HTML5.
+                <code>&lt;b&gt;</code> создан для выделения слов или фраз, когда выделение не придает словам
+                дополнительной важности, а <code>&lt;i&gt;</code> выделяет цитаты, прямую речь, термины и т.д.</p>
+        </main>
+        <main class="bd-main order-1">
+            <div class="bd-intro ps-lg-4">
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0"
+                        href="https://github.com/twbs/bootstrap/blob/main/site/content/docs/5.1/content/images.md"
+                        title="Cмотрите и редактируйте этот файл на GitHub" target="_blank" rel="noopener">Cмотреть на
+                        GitHub</a>
+                    <h1 class="bd-title" id="content">Изображения</h1>
+                </div>
+                <p class="bd-lead">Документация и примеры для настройки изображений для адаптивного поведения (чтобы они
+                    никогда не были больше, чем их родительские элементы) и добавление к ним облегченных стилей - все
+                    через классы.</p>
+                <div data-nosnippet="">
+
+
+
+                    <div class="bd-content ps-lg-4">
+
+
+                        <h2 id="responsive-images">Адаптивные изображения<a class="anchorjs-link " aria-label="Anchor"
+                                data-anchorjs-icon="#" href="#responsive-images" style="padding-left: 0.375em;"></a>
+                        </h2>
+                        <p>Изображения в Bootstrap делаются «отзывчивыми» с помощью <code>.img-fluid</code>. Это
+                            касается
+                            <code>max-width: 100%;</code> и <code>height: auto;</code> применяемых к изображению,
+                            которое таким
+                            образом масштабируется по родительскому элементу.</p>
+
+
+                        <div class="bd-example">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250"
+                                xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Responsive image"
+                                preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%"
+                                    fill="#dee2e6" dy=".3em">Responsive image</text>
+                            </svg>
+                        </div>
+                        <div class="highlight">
+                            <pre
+                                class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"img-fluid"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span></code></pre>
+                        </div>
+
+                        <h2 id="image-thumbnails">Эскизы изображений<a class="anchorjs-link " aria-label="Anchor"
+                                data-anchorjs-icon="#" href="#image-thumbnails" style="padding-left: 0.375em;"></a></h2>
+                        <p>В дополнение к нашим утилитам бордер-радиуса вы можете
+                            использовать класс <code>.img-thumbnail</code> для придания изображению границы 1px.</p>
+
+                        <div class="bd-example">
+                            <svg class="bd-placeholder-img img-thumbnail" width="200" height="200"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
+                                preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+                                <title>A generic square placeholder image with a white border around it, making it
+                                    resemble a
+                                    photograph taken with an old instant camera</title>
+                                <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%"
+                                    fill="#dee2e6" dy=".3em">200x200</text>
+                            </svg>
+                        </div>
+                        <div class="highlight">
+                            <pre
+                                class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"img-thumbnail"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span></code></pre>
+                        </div>
+
+
+
+
+                        <h2 id="picture">Тэг Picture<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                                href="#picture" style="padding-left: 0.375em;"></a></h2>
+
+                        <p>Если вы используете элемент <code>&lt;picture&gt;</code> для привязки множественных элементов
+                            <code>&lt;source&gt;</code> к определенному <code>&lt;img&gt;</code>, добавьте классы
+                            <code>.img-*</code> в <code>&lt;img&gt;</code>, а не в <code>&lt;picture&gt;</code>.</p>
+                        <div class="highlight">
+                            <pre class="chroma"><code class="language-html" data-lang="html">?<span class="p">&lt;</span><span class="nt">picture</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">"..."</span> <span class="na">type</span><span class="o">=</span><span class="s">"image/svg+xml"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"img-fluid img-thumbnail"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">picture</span><span class="p">&gt;</span>
+</code></pre>
+                        </div>
+
+                    </div>
+        </main>
+        <div class="bd-content ps-lg-4">
+            <h1>Таблицы</h1>
+            <p class="lead" >Документация и примеры для выбора стиля таблиц (учитывая их <br> преобладающее использование в плагинах JavaScript) Bootstrap.</p>
+            <h2 id="overview">Обзор<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#overview"
+                    style="padding-left: 0.375em;"></a></h2>
+            <p>В связи с широким использованием элементов <code>&lt;table&gt;</code> в сторонних виджетах, таких как
+                календари и средства выбора даты, мы сделали так, что таблицы Bootstrap <strong>подключены</strong>.
+                Добавьте базовый класс <code>.table</code> в любой <code>&lt;table&gt;</code> для расширения стилизацию
+                за счет наших обычных классов, либо классов-модификаторов. Все стили таблиц в Bootstrap не наследуются,
+                то есть любые вложенные таблицы могут быть стилизованы независимо от родительских.</p>
+            <p>Вот так таблицы, основанные на классе <code>.table</code>, выглядят в базовой разметке таблиц в
+                Bootstrap.</p>
+
+            <div class="bd-example">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="highlight">
+                <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>#<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>First<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Last<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Handle<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Mark<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Otto<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>@mdo<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Jacob<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Thornton<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>@fat<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span> <span class="na">colspan</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>Larry the Bird<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>@twitter<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+            </div>
+
+
+            <h2 id="variants">Варианты<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                    href="#variants" style="padding-left: 0.375em;"></a></h2>
+            <p>Используйте их для раскраски рядов или отдельных ячеек таблицы.</p>
+            <div class="bd-example">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Class</th>
+                            <th scope="col">Заголовок</th>
+                            <th scope="col">Заголовок</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">По умолчанию (Default)</th>
+                            <td>Ячейка</td>
+                            <td>Ячейка</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <th scope="row">Главный (Primary)</th>
+                            <td>Ячейка</td>
+                            <td>Ячейка</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <th scope="row">Второстепенный (Secondary)</th>
+                            <td>Ячейка</td>
+                            <td>Ячейка</td>
+                        </tr>
+                        <tr class="table-success">
+                            <th scope="row">Успех (Success)</th>
+                            <td>Ячейка</td>
+                            <td>Ячейка</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <th scope="row">Опасность (Danger)</th>
+                            <td>Ячейка</td>
+                            <td>Ячейка</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th scope="row">Предупреждение (Warning)</th>
+                            <td>Ячейка</td>
+                            <td>Ячейка</td>
+                        </tr>
+                        <tr class="table-info">
+                            <th scope="row">Предупреждение (Info)</th>
+                            <td>Ячейка</td>
+                            <td>Ячейка</td>
+                        </tr>
+                        <tr class="table-light">
+                            <th scope="row">Светлый (Light)</th>
+                            <td>Ячейка</td>
+                            <td>Ячейка</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <th scope="row">Темный (Dark)</th>
+                            <td>Ячейка</td>
+                            <td>Ячейка</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="highlight">
+                <pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- On tables --&gt;</span>
+      <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-primary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-secondary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-success"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-danger"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-warning"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-info"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-light"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-dark"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+      
+      <span class="c">&lt;!-- On rows --&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-primary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-secondary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-success"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-danger"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-warning"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-info"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-light"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-dark"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      
+      <span class="c">&lt;!-- On Ячейкаs (`td` or `th`) --&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-primary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-secondary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-success"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-danger"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-warning"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-info"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-light"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-dark"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span></code></pre>
+            </div>
+
+            <div class="bd-callout bd-callout-info">
+                <h5 id="conveying-meaning-to-assistive-technologies">Придание смысла вспомогательным технологиям</h5>
+                <p>Использование цвета как дополнительного инструмента информативности доступно только в визуальной
+                    сфере, что ограничивает пользователей вспомогательных технологий, таких как программы чтения с
+                    экрана. Убедитесь, что информация, обозначенная цветом, также доступна из самого содержимого
+                    (например, видимый текст) или содержится в альтернативных средствах, таких как дополнительный
+                    скрытый в классе <code>.visually-hidden</code> текст.</p>
+            </div>
+
+
+
+            <p>Эти :hover ряды также можно комбинировать с «полосатым» вариантом:</p>
+            <div class="bd-example">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            </main>
+            <!-- Footer -->
+            <div class="nbmain" style="display: flex; justify-content: center;">
+                <nav aria-label="..." style="display: flex;">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="/secondlesson.html">Назад
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="/secondlesson.html">2</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">3</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="fourthlesson.html">4</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="/fourthlesson.html">Далее</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <footer class="page-footer font-small blue pt-4">
+                <div class="footer-copyright text-center py-3">© 2021 Developed by:
+                    <a href="https://github.com/Max-Twain">Max_Twain</a>
+                </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
