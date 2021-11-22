@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url(/ocean.jpg);">
+    <div class="container" style="background-color:#F7F7F9; color: #2B2D42; ">
+        <h1 style="padding-top: 2em; padding-left:28px; ">И так мы разобрались с подключением <br> и теперь разберёмся с
+            разметкой</h1>
+        <main class="bd-main order-1">
+            <div class="bd-intro ps-lg-4">
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0"></a>
+                    <h1 class="bd-title" id="content">Контейнеры</h1>
+                </div>
+                <p class="bd-lead">Контейнеры являются фундаментальным строительным блоком Bootstrap, которые содержат
+                    ваш контент, дополняют и выравнивают его на устройствах или в областях просмотра.</p>
+
+
+
+                <div class="bd-content ps-lg-4">
+
+
+                    <h2 id="how-they-work">Как это устроено<a class="anchorjs-link " aria-label="Anchor"
+                            data-anchorjs-icon="#" href="#how-they-work" style="padding-left: 0.375em;"></a></h2>
+                    <p>Это базовый элемент в Bootstrap и они необходимы при использовании нашей <strong>стандартной
+                            сеточной системы</strong>. Контейнеры используются для размещения в них содержимого,
+                        дополнений и (иногда) центрирования содержимого внутри них. Хотя контейнеры <em>могут быть</em>
+                        вложенными, большинство макетов не требуют вложенного контейнера.</p>
+                    <p>В Bootstrap используется три разных типа контейнеров:</p>
+                    <ul>
+                        <li><code>.container</code>, который устанавливает максимальную ширину <code>max-width</code> в
+                            каждой отзывчивой контрольной точке;</li>
+                        <li><code>.container-fluid</code>, ширина которого <code>width: 100%</code> на всех контрольных
+                            точках;</li>
+                        <li><code>.container-{breakpoint}</code>, то есть ширина <code>width: 100%</code> до указанной
+                            контрольной точки.</li>
+                    </ul>
+                    <p>В приведенной ниже таблице показано, как максимальная ширина <code>max-width</code> каждого
+                        контейнера <code>.container</code> и <code>.container-fluid</code> сравнивается с исходными в
+                        каждой контрольной точке.</p>
+                    <p>Посмотрите их в действии и сравните их в <a
+                            href="https://bootstrap-4.ru/docs/5.1/examples/grid/#containers">примере Сеток</a>.</p>
+
+                    <table class="table">
+
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="fw-normal"><code>.container</code></th>
+                                <td class="text-muted">100%</td>
+                                <td>540px</td>
+                                <td>720px</td>
+                                <td>960px</td>
+                                <td>1140px</td>
+                                <td>1320px</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-normal"><code>.container-sm</code></th>
+                                <td class="text-muted">100%</td>
+                                <td>540px</td>
+                                <td>720px</td>
+                                <td>960px</td>
+                                <td>1140px</td>
+                                <td>1320px</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-normal"><code>.container-md</code></th>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td>720px</td>
+                                <td>960px</td>
+                                <td>1140px</td>
+                                <td>1320px</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-normal"><code>.container-lg</code></th>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td>960px</td>
+                                <td>1140px</td>
+                                <td>1320px</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-normal"><code>.container-xl</code></th>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td>1140px</td>
+                                <td>1320px</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-normal"><code>.container-xxl</code></th>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td>1320px</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-normal"><code>.container-fluid</code></th>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                                <td class="text-muted">100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="default-container">Контейнер по умолчанию<a class="anchorjs-link " aria-label="Anchor"
+                            data-anchorjs-icon="#" href="#default-container" style="padding-left: 0.375em;"></a></h2>
+                    <p>По умолчанию класс <code>.container</code> является адаптивным контейнером фиксированной ширины,
+                        что означает, что его максимальная ширина <code>max-width</code> изменяется в каждой контрольной
+                        точке.</p>
+                    <div class="highlight">
+                        <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container"</span><span class="p">&gt;</span>
+        <span class="c">&lt;!-- Content here --&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                    </div>
+
+                    <h2 id="responsive-containers">Адаптивные контейнеры<a class="anchorjs-link " aria-label="Anchor"
+                            data-anchorjs-icon="#" href="#responsive-containers" style="padding-left: 0.375em;"></a>
+                    </h2>
+                    <p>Адаптивные контейнеры позволяют указывать класс шириной 100%, пока не будет достигнута указанная
+                        контрольная точка, после чего мы применяем <code>max-width</code> для каждой из более высоких
+                        контрольных точек. Например, <code>.container-sm</code> будет иметь ширину в 100% до тех пор,
+                        пока не будет достигнута контрольная точка <code>sm</code>, где он будет масштабироваться уже с
+                        помощью <code>md</code>, <code>lg</code>, <code>xl</code> и <code>xxl</code>.</p>
+                </div>
+                <div class="highlight">
+                    <pre
+                        class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container-sm"</span><span class="p">&gt;</span>100% wide until small breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container-md"</span><span class="p">&gt;</span>100% wide until medium breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container-lg"</span><span class="p">&gt;</span>100% wide until large breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container-xl"</span><span class="p">&gt;</span>100% wide until extra large breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container-xxl"</span><span class="p">&gt;</span>100% wide until extra extra large breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2 id="fluid-containers">Подвижные контейнеры<a class="anchorjs-link " aria-label="Anchor"
+                        data-anchorjs-icon="#" href="#fluid-containers" style="padding-left: 0.375em;"></a></h2>
+                <p>Используйте <code>.container-fluid</code> для создания контейнера полной ширины, охватывающего
+                    всю ширину области просмотра.</p>
+            </div>
+            <div class="highlight">
+                <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container-fluid"</span><span class="p">&gt;</span>
+        ...
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+            </div>
+            <h3>С контейнерами мы закончили, теперь узнаем о позиционировании</h3>
+            <p>Bootstrap используют свою систему сеток основаную на flexbox <br> Как написано в официальной
+                документации: Используется система «12 колонок», 5-ти адаптивных ярусов, препроцессоров Sass и
+                предустановленных классов </p>
+
+            <!-- Новое -->
+            <div class="bd-content ps-lg-4">
+
+
+
+                <h2 id="example">Пример<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                        href="#example" style="padding-left: 0.375em;"></a></h2>
+                <p>Система сетки Bootstrap использует серию контейнеров, строк и столбцов для размещения и выравнивания
+                    содержимого. Сетки построены на <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+                        rel="nofollow noopener">flexbox</a> и полностью отзывчивы. Ниже приведен пример с подробным
+                    объяснением того, как работает система сеткок.</p>
+
+                <div class="bd-callout bd-callout-info">
+                    <strong>Новичок или незнаком с flexbox?</strong> <a
+                        href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background"
+                        rel="nofollow noopener">Прочитайте руководство CSS Tricks flexbox</a> для получения справочной
+                    информации, знакомтва с терминологией, рекомендациями и фрагментовами кода.
+                </div>
+
+                <div class="bd-example bd-example-row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm" style="border: 3px solid #000000;">
+                                Одна из трёх колонок
+                            </div>
+                            <div class="col-sm" style="border: 3px solid #000000;">
+                                Одна из трёх колонок
+                            </div>
+                            <div class="col-sm" style="border: 3px solid #000000;">
+                                Одна из трёх колонок
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight">
+                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-sm"</span><span class="p">&gt;</span>
+                          Одна из трёх колонок
+                        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-sm"</span><span class="p">&gt;</span>
+                          Одна из трёх колонок
+                        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-sm"</span><span class="p">&gt;</span>
+                          Одна из трёх колонок
+                        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>В данном примере с помощью наших предустановленных классов сеток были созданы 3 колонки равной ширины
+                    для маленьких, средних и больших девайсов. Эти колонки выровнены с помощью родительского класса
+                    <code>.container</code>.</p>
+
+                <h2 id="how-it-works">Как это устроено<a class="anchorjs-link " aria-label="Anchor"
+                        data-anchorjs-icon="#" href="#how-it-works" style="padding-left: 0.375em;"></a></h2>
+                <p>Разберём как работает сеточная система:</p>
+                <ul>
+                    <li>
+                        <p><strong>Наша сетка поддерживает <a href="/docs/5.1/layout/breakpoints/">шесть отзывчивых
+                                    контрольных точек</a>.</strong> Контрольные точки основаны на медиа-запросах
+                            <code>min-width</code>, то есть они влияют на эту точку останова и на все те, которые
+                            находятся над ней (например, <code>.col-sm-4</code> и применяется к <code>md</code>,
+                            <code>lg</code>, <code>xl</code> и <code>xxl</code>). Это означает, что вы можете
+                            контролировать размер контейнера и столбцов в каждой контрольной точке.</p>
+                    </li>
+                    <li>
+                        <p><strong>Контейнеры располагаются по центру и горизонтально дополняя ваш контент.</strong>
+                            Используйте <code>.container</code> при адаптивной ширине, <code>.container-fluid</code> для
+                            <code>width: 100%</code> на всех экранах и устройствах или в адаптивном контейнере
+                            (например, <code>.container-md</code>) для сочетания адаптивности и заданной ширины.</p>
+                    </li>
+                    <li>
+                        <p><strong>Строки являются обертками для столбцов.</strong> Каждый столбец имеет горизонтальный
+                            <code>padding</code> для создания отступов между отдельными колонками. Этот
+                            <code>padding</code> нейтрализует строки с отрицательной полями для обеспечения визуального
+                            выравнивания содержимого в столбцах по левой стороне. Строки также поддерживают
+                            классы-модификаторы для <a href="#row-columns">равномерного распределения размера ширины
+                                колонок</a> и <a href="/docs/5.1/layout/gutters/"> изменения отступов вашего
+                                контента</a>.</p>
+                    </li>
+                    <li>
+                        <p><strong>Невероятно гибкие столбцы.</strong> В каждой строке доступно 12 шаблонных столбцов,
+                            что позволяет создавать различные комбинации элементов, которые охватывают любое количество
+                            столбцов. Так, если вы хотите использовать четыре колонки одной ширины, используйте
+                            <code>.col-4</code>. Ширина <code>width</code> задается в процентах, поэтому размер будет
+                            всегда одинаковый</p>
+                    </li>
+                    <li>
+                        <p><strong>Отступы также отзывчивы и настраиваемы.</strong> <a
+                                href="/docs/5.1/layout/gutters/">Классы отступов между столбцами</a> доступны во всех
+                            точках останова, с такими же размерами, как наши <a
+                                href="/docs/5.1/utilities/spacing/">классы полей и интервалы заполнения</a>. Замените
+                            отступы с помощью классов <code>.gx-*</code>, вертикальные отступы с помощью
+                            <code>.gy-*</code> или все отступы с классами <code>.g-*</code>. Класс <code>.g-0</code>
+                            также доступен для удаления отступов.</p>
+                    </li>
+                    <li>
+                        <p><strong>Большие возможности Sass переменных, карт и миксинов для использования в ситеме
+                                сеток.</strong> Если вы не хотите использовать предопределенные классы сеток в
+                            Bootstrap, то вы можете использовать <a href="#sass">исходники нашей Sass сетки</a> для
+                            создания своей собственной с более семантической разметкой. Мы также включили некоторые
+                            пользовательские свойства CSS, чтобы использовать эти переменные Sass для большей гибкости в
+                            ваших проектах.</p>
+                    </li>
+                </ul>
+
+                <p>Помните об ограничениях и ошибках <a href="https://github.com/philipwalton/flexbugs"
+                        rel="nofollow noopener">ошибках flexbox</a>, таких как <a
+                        href="https://github.com/philipwalton/flexbugs#flexbug-9" rel="nofollow noopener">невозможность
+                        использовать некоторые элементы HTML в качестве гибких контейнеров</a>.</p>
+
+                <h2 id="grid-options">Параметры сетки<a class="anchorjs-link " aria-label="Anchor"
+                        data-anchorjs-icon="#" href="#grid-options" style="padding-left: 0.375em;"></a></h2>
+                <p>Система сеткок Bootstrap может адаптироваться ко всем шести контрольным точкам (брейкпойнтам) по
+                    умолчанию и любым точкам, которые вы настраиваете. Шесть уровней сетки по умолчанию следующие:</p>
+                <ul>
+                    <li>Очень маленький - Extra small (xs)</li>
+                    <li>Маленький - Small (sm)</li>
+                    <li>Средний - Medium (md)</li>
+                    <li>Большой - Large (lg)</li>
+                    <li>Очень большой - Extra large (xl)</li>
+                    <li>Огромный - Extra extra large (xxl)</li>
+                </ul>
+                <p>Как показано выше, каждая из этих контрольных точкек имеет свой собственный контейнер, уникальный
+                    префикс класса и модификаторы. Вот как определяется сетка на этих контрольных точках:</p>
+
+                <table class="table mb-4">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">
+                                xs<br>
+                                <span class="fw-normal">&lt;576px</span>
+                            </th>
+                            <th scope="col">
+                                sm<br>
+                                <span class="fw-normal">≥576px</span>
+                            </th>
+                            <th scope="col">
+                                md<br>
+                                <span class="fw-normal">≥768px</span>
+                            </th>
+                            <th scope="col">
+                                lg<br>
+                                <span class="fw-normal">≥992px</span>
+                            </th>
+                            <th scope="col">
+                                xl<br>
+                                <span class="fw-normal">≥1200px</span>
+                            </th>
+                            <th scope="col">
+                                xxl<br>
+                                <span class="fw-normal">≥1400px</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="text-nowrap" scope="row">Контейнер <code class="fw-normal">max-width</code></th>
+                            <td>None (auto)</td>
+                            <td>540px</td>
+                            <td>720px</td>
+                            <td>960px</td>
+                            <td>1140px</td>
+                            <td>1320px</td>
+                        </tr>
+                        <tr>
+                            <th class="text-nowrap" scope="row">Префикс класса</th>
+                            <td><code>.col-</code></td>
+                            <td><code>.col-sm-</code></td>
+                            <td><code>.col-md-</code></td>
+                            <td><code>.col-lg-</code></td>
+                            <td><code>.col-xl-</code></td>
+                            <td><code>.col-xxl-</code></td>
+                        </tr>
+                        <tr>
+                            <th class="text-nowrap" scope="row">Число колонок</th>
+                            <td colspan="6">12</td>
+                        </tr>
+                        <tr>
+                            <th class="text-nowrap" scope="row">Ширина отступа</th>
+                            <td colspan="6">1.5rem (.75rem слева и справа)</td>
+                        </tr>
+                        <tr>
+                            <th class="text-nowrap" scope="row">Переопределение отступа</th>
+                            <td colspan="6"><a href="/docs/5.1/layout/gutters/">Да</a></td>
+                        </tr>
+                        <tr>
+                            <th class="text-nowrap" scope="row">Может быть вложенным</th>
+                            <td colspan="6"><a href="#nesting">Да</a></td>
+                        </tr>
+                        <tr>
+                            <th class="text-nowrap" scope="row">Упорядочивание колонок</th>
+                            <td colspan="6"><a href="/docs/5.1/layout/columns/#reordering">Да</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>Больше про сетучную систему можно прочитать в <a
+                        href="https://bootstrap-4.ru/docs/5.1/layout/grid/#example">официальной документации</a></h4>
+            </div>
+
+            <main class="bd-main order-1">
+
+
+                <div class="bd-content ps-lg-4">
+
+
+                    <div class="bd-callout bd-callout-info" style="padding-top: 2em;">
+                        <strong>Внимание!</strong> Обязательно прочитайте страницу о <span style="font-weight: 700;">
+                            Система сеток </span>, прежде чем углубляться в то, как изменять и настраивать столбцы
+                        сетки.
+                    </div>
+                    <h2 style="padding-top:2em;">Колонки</h2>
+                    <h2 id="how-they-work" style="padding-top:2em;">Как это работает<a class="anchorjs-link "
+                            aria-label="Anchor" data-anchorjs-icon="#" href="#how-they-work"
+                            style="padding-left: 0.375em;"></a></h2>
+                    <ul>
+                        <li>
+                            <p><strong>Столбцы основаны на архитектуре flexbox.</strong> Это означает, что у нас есть
+                                опции для изменения отдельных столбцов и изменения групп столбцов на уровне строк</a>.
+                                Вы выбираете как столбцы увеличить, уменьшить или изменить иным образом.</p>
+                        </li>
+                        <li>
+                            <p><strong>При построении макетов сетки весь контент помещается в столбцы.</strong> Иерархия
+                                сетки Bootstrap переходит от контейнера</a> к строке столбца вашего контента. В редких
+                                случаях вы можете комбинировать контент и колонку, но делайте это внимателно.</p>
+                        </li>
+                        <li>
+                            <p><strong>Bootstrap включает в себя предопределенные классы для создания быстрых,
+                                    адаптивных макетов.</strong> Имея шесть контрольных точек</a>, дюжину столбцов на
+                                каждом уровне сетки и десятки классов, можно создать своих индивидуальные макеты. При
+                                желании, это можно настроить через Sass.</p>
+                        </li>
+                    </ul>
+
+                    <h2 id="alignment">Выравнивание<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                            href="#alignment" style="padding-left: 0.375em;"></a></h2>
+                    <p>Используйте утилиты выравнивания flexbox для выравнивания столбцов по вертикали и горизонтали.
+                    </p>
+
+                    <h3 id="vertical-alignment">Вертикальное выравнивание<a class="anchorjs-link " aria-label="Anchor"
+                            data-anchorjs-icon="#" href="#vertical-alignment" style="padding-left: 0.375em;"></a></h3>
+                    <div class="bd-example bd-example-row bd-example-row-flex-cols">
+                        <div class="container" style="border: 1px solid #000000;">
+                            <div class="row align-items-start">
+                                <div class="col" style="border: 1px solid #000000;">
+                                    Одна из трёх колонок
+                                </div>
+                                <div class="col" style="border: 1px solid #000000;">
+                                    Одна из трёх колонок
+                                </div>
+                                <div class="col" style="border: 1px solid #000000;">
+                                    Одна из трёх колонок
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col" style="border: 1px solid #000000;">
+                                    Одна из трёх колонок
+                                </div>
+                                <div class="col" style="border: 1px solid #000000;">
+                                    Одна из трёх колонок
+                                </div>
+                                <div class="col" style="border: 1px solid #000000;">
+                                    Одна из трёх колонок
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col" style="border: 1px solid #000000;">
+                                    Одна из трёх колонок
+                                </div>
+                                <div class="col" style="border: 1px solid #000000;">
+                                    Одна из трёх колонок
+                                </div>
+                                <div class="col" style="border: 1px solid #000000;">
+                                    Одна из трёх колонок
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd-clipboard">
+                        <div class="highlight">
+                            <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row align-items-start"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row align-items-center"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row align-items-end"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                        </div>
+                        <div class="bd-example bd-example-row bd-example-row-flex-cols">
+                            <div class="container" style="border: 1px solid #000000;">
+                                <div class="row">
+                                    <div class="col align-self-start" style="border: 1px solid #000000;">
+                                        Одна из трёх колонок
+                                    </div>
+                                    <div class="col align-self-center" style="border: 1px solid #000000;">
+                                        Одна из трёх колонок
+                                    </div>
+                                    <div class="col align-self-end" style="border: 1px solid #000000;">
+                                        Одна из трёх колонок
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col align-self-start"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col align-self-center"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col align-self-end"</span><span class="p">&gt;</span>
+                Одна из трёх колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                        </div>
+
+                        <h3 id="horizontal-alignment">Горизонтальное выравнивание<a class="anchorjs-link "
+                                aria-label="Anchor" data-anchorjs-icon="#" href="#horizontal-alignment"
+                                style="padding-left: 0.375em;"></a></h3>
+                        <div class="bd-example bd-example-row">
+                            <div class="container" style="border: 1px solid #000000;">
+                                <div class="row justify-content-start">
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                </div>
+                                <div class="row justify-content-end">
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                </div>
+                                <div class="row justify-content-around">
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between">
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                </div>
+                                <div class="row justify-content-evenly">
+                                    <div class="col-4" style="border: 1px solid #000000;">
+                                        Одна из двух колонок
+                                    </div>
+                                    <div class="col-4" style="border: 1px solid #000000; ">
+                                        Одна из двух колонок
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd-clipboard"></div>
+                        <div class="highlight">
+                            <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row justify-content-start"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row justify-content-center"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row justify-content-end"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row justify-content-around"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row justify-content-between"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row justify-content-evenly"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>
+                Одна из двух колонок
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                        </div>
+                    </div>
+            </main>
+
+        </main>
+        <h3 style="padding-top: 2em;">Для закрепления учебного материала пройдите тест</h3>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Пройдите тест
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" <!--
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="color: black;" id="exampleModalLabel">Тест №1 </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="quiz.html" width="480" height="720" class="quiz-frame"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top: 50px;"></div>
+        <div class="nbmain" style="display: flex; justify-content: center;">
+            <nav aria-label="..." style="display: flex;">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="/firstlesson.html">Назад
+                        </a>
+                    </li>
+                        <li class="page-item"><a class="page-link" href="/firstlesson.html">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">2</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="/thirdlesson.html">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="/secondlesson.html">Далее</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <footer class="page-footer font-small blue pt-4">
+            <div class="footer-copyright text-center py-3">© 2021 Developed by:
+                <a href="https://github.com/Max-Twain">Max_Twain</a>
+            </div>
+
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
