@@ -132,16 +132,16 @@ class Result
 //Массив с результатами
 const results = 
 [
-	new Result("Вам многому нужно научиться", 0),
-	new Result("Вы уже неплохо разбираетесь", 2),
-	new Result("Ваш уровень выше среднего", 4),
-	new Result("Вы в совершенстве знаете тему", 5)
+	new Result("Вам потрібно повторити матеріал", 0),
+	new Result("Ви вже непогано знаєтеся", 2),
+	new Result("Ваш рівень вищий за середній", 4),
+	new Result("Ви досконало знаєте тему! переходьте до наступного кроку ", 5)
 ];
 
 //Массив с вопросами
 const questions = 
 [
-	new Question("Bootstrap- это технология которая позволяет тебе практически не трогать какие файлы?", 
+	new Question("Bootstrap - це технологія, яка дозволяє тобі практично не чіпати які файли?", 
 	[
 		new Answer("HTML", 0),
 		new Answer("JS", 0),
@@ -149,7 +149,7 @@ const questions =
 		new Answer("Node.js", 0)
 	]),
 
-	new Question("Что нужно прописать что бы контейнер был на всю ширину экрана вне зависимости от расширения?", 
+	new Question("Що потрібно прописати щоб контейнер був на всю ширину екрана незалежно від розширення?", 
 	[
 		new Answer(".container-sm", 0),
 		new Answer(".container-md", 0),
@@ -157,7 +157,7 @@ const questions =
 		new Answer(".container-xxl", 0)
 	]),
 
-	new Question("Сколько отзывчивых точек максимально поддерживает сеточная система Bootstrap?", 
+	new Question("Скільки чутливих точок максимально підтримує сіткова система Bootstrap?", 
 	[
 		new Answer("12", 0),
 		new Answer("6", 1),
@@ -165,20 +165,20 @@ const questions =
 		new Answer("9", 0)
 	]),
 
-	new Question("Какую систему позиционирования использует Bootstrap?", 
+	new Question("Яку систему позиціонування використовує Bootstrap?", 
 	[
 		new Answer("flexbox", 1),
 		new Answer("grid.css", 0),
 		new Answer("float", 0),
-		new Answer("Ниодин из вышеперечисленных", 0)
+		new Answer("Ні одну з перерахованих", 0)
 	]),
 
-	new Question("Иерархия сетки Bootstrap переходит от контейнера к..", 
+	new Question("Ієрархія сітки Bootstrap переходить від контейнера до..?", 
 	[
-		new Answer("К материнскому элементу", 0),
-		new Answer("Строке столбца", 1),
-		new Answer("Не переходит", 0),
-		new Answer("К колонке", 0)
+		new Answer("До материнського елементу", 0),
+		new Answer("Рядку стовпця", 1),
+		new Answer("Не переходить", 0),
+		new Answer("До колонки", 0)
 	])
 ];
 
