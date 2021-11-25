@@ -12,53 +12,77 @@
 
 <body style="background-image: url(/ocean.jpg);">
     <header style="padding-top: 5em;"></header>
+
     <div class="container" style="background-color:#F7F7F9; color: #2B2D42;">
 
-        <p class="h1" style="text-align: center; padding-top: 2em; ">В цьому кроці ми повинні дослідиті досить важливу
+        <p class="h1" style="text-align: center; padding-top: 2em; ">В цьому кроці ми повинні дослідити досить важливу
             частину</p>
+        <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+            <strong class="d-block h6 my-2 pb-2 border-bottom">Зміст</strong>
+            <nav id="TableOfContents">
+                <ul>
+                    <ul> <a href="#overview" style="color: red; ">Форми</a></ul>
+                    <li><a href="#overview">Огляд</a></li>
+                    <li><a href="#form-text">Допоміжний текст</a></li>
+                    <li><a href="#disabled-forms">Деактивовані форми</a></li>
+                    <li><a href="#accessibility">Доступність</a></li>
+                    <ul> <a href="#content_form" style="color: red; ">Управление формой</a></ul>
+                    <li><a href="#example">Приклад</a></li>
+                    <li><a href="#sizing">Розміри</a></li>
+                    <li><a href="#disabled">Відключена</a></li>
+                    <li><a href="#readonly">Тільки для читання</a></li>
+                    <li><a href="#readonly-plain-text">Простий текст лише для читання</a></li>
+                    <li><a href="#file-input">Вибір файлу</a></li>
+                    <ul><a href="#content_list" style="color: red;">Выпадающие списки</a></ul>
+                    <li><a href="#default_list">Настройки по умолчанию</a></li>
+                    <li><a href="#sizing_list">Размер</a></li>
+                    <li><a href="#disabled_list">Отключено</a></li>
+                    <ul> <a href="#content_box" style="color: red;">Чекбоксы (флажки) и радиокнопки</a></ul>
+                    <li><a href="#approach">Подход</a></li>
+                    <li><a href="#checks">Чекбоксы (Флажки)</a>
+                    <li><a href="#indeterminate">Неопределенный</a></li>
+                    <li><a href="#disabled">Деактивированные</a></li>
+                    <li><a href="#radios">Радиокнопки</a>
+                    <li><a href="#disabled-1">Деактивированные</a></li>
+                    <li><a href="#switches">Переключатели</a></li>
+                    <ul> <a href="#overview_step" style="color: red;">Диапазон</a></ul>
+                    <li><a href="#disabled_step">Отключено</a></li>
+                    <li><a href="#min-and-max">Минимальные и максимальные значения</a></li>
+                    <li><a href="#steps">Шаг</a></li>
+                </ul>
+            </nav>
+
+        </div>
 
         <main class="bd-main order-1">
 
-            <h1 class="bd-title" style="padding-left: 1em; padding-top: 2em; " id="content">Формы</h1>
-
-
-
-            <div class="bd-content ps-lg-4">
-
-
-
-                <h2 id="overview">Огляд<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#"
-                        href="#overview" style="padding-left: 0.375em; "></a></h2>
-                <p>Форми в Bootstrap є просто розширенням наших <a href="/docs/5.1/content/reboot/#forms">Reboot стилів
-                        форм</a> з додаванням класів. Використовуйте ці класи для більш точного налаштування
-                    відображення та кращого відтворення на різних браузерах та пристроях.</p>
-                <p>Перевірте, що ви використовуєте правильний атрибут <code>type</code> у всіх формах введення (тобто,
-                    <code>email</code> для пошти та <code>number</code> для цифрової інформації) , це дасть вам переваги
-                    у вигляді новітніх інструментів (таких як перевірка email, вибірка чисел тощо) контролю даних
-                    введення.</p>
-                <p>Ось демонстрація стилів форм Bootstrap. Читайте документацію щодо необхідних класів, розташування
-                    форм тощо.</p>
-                <div class="bd-example">
-                    <div class="bd-example w-25 ">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+            <h2 id="overview" style="text-align:center">Форми</h2>
+            <h2>Огляд<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#overview"
+                    style="padding-left: 0.375em; "></a></h2>
+            <p>Перевірте, що ви використовуєте правильний атрибут <code>type</code> у всіх формах введення (тобто,
+                <code>email</code> для пошти та <code>number</code> для цифрової інформації) , це дасть вам переваги
+                у вигляді новітніх інструментів (таких як перевірка email, вибірка чисел тощо) контролю даних
+                введення.</p>
+            <p>Ось демонстрація стилів форм Bootstrap. Читайте документацію щодо необхідних класів, розташування
+                форм тощо.</p>
+            <div class="bd-example w-25">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <div class="highlight">
-                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="highlight pt-5">
+                <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-3"</span><span class="p">&gt;</span>
           <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"exampleInputEmail1"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-label"</span><span class="p">&gt;</span>Email address<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
           <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"email"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control"</span> <span class="na">id</span><span class="o">=</span><span class="s">"exampleInputEmail1"</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">"emailHelp"</span><span class="p">&gt;</span>
@@ -74,60 +98,59 @@
         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
       <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span></code></pre>
-                </div>
+            </div>
 
-                <h2 id="form-text">Допоміжний текст<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
-                        href="#form-text" style="padding-left: 0.375em;"></a></h2>
-                <p>Текст форми на рівні блоку або на рівні рядка може бути створений за допомогою
-                    <code>.form-text</code>.</p>
+            <h2 id="form-text">Допоміжний текст<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                    href="#form-text" style="padding-left: 0.375em;"></a></h2>
+            <p>Текст форми на рівні блоку або на рівні рядка може бути створений за допомогою
+                <code>.form-text</code>.</p>
 
-                <div class="bd-callout bd-callout-warning">
-                    <h5 id="associating-form-text-with-form-controls">Зв'язок допоміжного тексту з органами контролю
-                        форм</h5>
-                    <p>Допоміжний текст має бути явно пов'язаний із спорідненими його елементами контролю форм, це
-                        робиться атрибутом <code>aria-describedby</code>. Це забезпечить допоміжним технологіям
-                        (наприклад, екранні читалки) можливість прочитати цей текст, коли користувач звертається до
-                        пов'язаного з цим текстом елементу контролю.</p>
+            <div class="bd-callout bd-callout-warning">
+                <h5 id="associating-form-text-with-form-controls">Зв'язок допоміжного тексту з органами контролю
+                    форм</h5>
+                <p>Допоміжний текст має бути явно пов'язаний із спорідненими його елементами контролю форм, це
+                    робиться атрибутом <code>aria-describedby</code>. Це забезпечить допоміжним технологіям
+                    (наприклад, екранні читалки) можливість прочитати цей текст, коли користувач звертається до
+                    пов'язаного з цим текстом елементу контролю.</p>
+            </div>
+            <p>Допоміжний текст під полями може бути оформлений за допомогою <code>.form-text</code>. Якщо буде
+                використано елемент рівня блоку, додається верхнє поле для спрощення відстані від вхідних даних.</p>
+            <div class="bd-example w-25 ">
+                <label for="inputPassword5" class="form-label">Пароль</label>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="passwordHelpBlock" class="form-text">
+                    Ваш пароль повинен складатися з 8-20 символів, містити літери та цифри і не повинен містити
+                    пробілів, спеціальних символів або емодзі.
                 </div>
-                <p>Допоміжний текст під полями може бути оформлений за допомогою <code>.form-text</code>. Якщо буде
-                    використано елемент рівня блоку, додається верхнє поле для спрощення відстані від вхідних даних.</p>
-                <div class="bd-example w-25 ">
-                    <label for="inputPassword5" class="form-label">Пароль</label>
-                    <input type="password" id="inputPassword5" class="form-control"
-                        aria-describedby="passwordHelpBlock">
-                    <div id="passwordHelpBlock" class="form-text">
-                        Ваш пароль повинен складатися з 8-20 символів, містити літери та цифри і не повинен містити
-                        пробілів, спеціальних символів або емодзі.
-                    </div>
-                </div>
-                <div style="padding-top: 2em;" class="highlight">
-                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class=" nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"inputPassword5"</span> < span class="na">class</span><span class="o">=</span><span class="s">"form-label"</span><span class="p"> &gt;</span>Пароль<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+            </div>
+            <div style="padding-top: 2em;" class=" highlight pt-5">
+                <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class=" nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"inputPassword5"</span> < span class="na">class</span><span class="o">=</span><span class="s">"form-label"</span><span class="p"> &gt;</span>Пароль<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=< /span><span class="s">"password"</span> <span class="na">id</span><span class="o">=</span><span class="s ">"inputPassword5"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control"</ span><span class="na">aria-describedby</span><span class="o">=</span><span class="s">"passwordHelpBlock"</span><span class=" p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=< /span><span class="s">"passwordHelpBlock"</span> <span class="na">class</span><span class="o">=</span><span class="s ">"form-text"</span><span class="p">&gt;</span>
           Ваш пароль повинен складатися з 8-20 символів, містити літери та цифри і не повинен містити пробілів, спеціальних символів або емодзі.
         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
-                </div>
-                <p>Вбудований текст може використовувати будь-який типовий рядковий HTML-елемент (будь то
-                    <code>&lt;span&gt;</code>, <code>&lt;small&gt;</code> або щось ще) з не більш ніж класом
-                    <code>.form-text</code>.</p>
-                <div class="bd-example w-25">
-                    <div class="row g-3 align-items-center">
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Пароль</label>
-                        </div>
-                        <div class="col-auto">
-                            <input type="password" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
-                        </div>
-                        <div class="col-auto">
-                            <span id="passwordHelpInline" class="form-text">
-                                Має бути 8-20 символів.
-                            </span>
-                        </div>
+            </div>
+            <p>Вбудований текст може використовувати будь-який типовий рядковий HTML-елемент (будь то
+                <code>&lt;span&gt;</code>, <code>&lt;small&gt;</code> або щось ще) з не більш ніж класом
+                <code>.form-text</code>.</p>
+            <div class="bd-example w-25 w-25">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Пароль</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="password" id="inputPassword6" class="form-control"
+                            aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            Має бути 8-20 символів.
+                        </span>
                     </div>
                 </div>
-                <div class="highlight" style="padding-top: 2em;">
-                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row g-3 align-items-center"</span><span class="p">&gt;</span>
+            </div>
+            <div class=" highlight pt-5" style="padding-top: 2em;">
+                <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row g-3 align-items-center"</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-auto"</span><span class="p">&gt;</span>
           <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"inputPassword6"</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-form-label"</span><span class="p">&gt;</span>Пароль<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -140,61 +163,61 @@
           <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
       <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+            </div>
+
+            <h2 id="disabled-forms">Деактивовані форми<a class="anchorjs-link " aria-label="Anchor"
+                    data-anchorjs-icon="#" href="#disabled-forms" style="padding-left: 0.375em;"></a></h2>
+            <p>Додайте логічний атрибут <code>disabled</code>, щоб зробити її світлішим і запобігти можливості
+                взаємодії користувачем з цією формою.</p>
+
+            <div class="bd-clipboard">
+                <div class=" highlight pt-5">
+                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p" >&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class= "s">"form-control"</span> <span class="na">id</span><span class="o">=</span><span class="s">"disabledInput" </span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class=" na">placeholder</span><span class="o">=</span><span class="s">"Disabled input here..."</span> <span class="na">disabled </span><span class="p">&gt;</span>
+      </code></pre>
                 </div>
 
-                <h2 id="disabled-forms">Деактивовані форми<a class="anchorjs-link " aria-label="Anchor"
-                        data-anchorjs-icon="#" href="#disabled-forms" style="padding-left: 0.375em;"></a></h2>
-                <p>Додайте логічний атрибут <code>disabled</code>, щоб зробити її світлішим і запобігти можливості
-                    взаємодії користувачем з цією формою.</p>
-
-                <div class="bd-clipboard">
-                    <div class="highlight">
-                        <pre class="chroma"><code class="language-html" data-lang="html"><span class="p" >&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class= "s">"form-control"</span> <span class="na">id</span><span class="o">=</span><span class="s">"disabledInput" </span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class=" na">placeholder</span><span class="o">=</span><span class="s">"Disabled input here..."</span> <span class="na">disabled </span><span class="p">&gt;</span>
-      </code></pre>
-                    </div>
-
-                    <p>Додайте атрибут <code>disabled</code> у <code>&lt;fieldset&gt;</code>, щоб вимкнути всередині всі
-                        елементи керування. За замовчуванням браузери обробляють всі елементи керування власними формами
-                        (елементи <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> та
-                        <code>&lt;button&gt;</code>) усередині <code>&lt;fieldset disabled&gt;</code> як відключені,
-                        запобігаючи взаємодії з ними як з клавіатури, так і за допомогою миші.</p>
-                    <p>Однак, якщо ваша форма також включає елементи користувача, схожі на кнопки, такі як <code>&lt;a
-                            class="btn btn-*"&gt;...&lt;/a&gt;</code>, то їм буде присвоєно тільки стиль
-                        подій-покажчиків <code>pointer-events: none</code>, що означає, що вони, як і раніше,
-                        фокусується і управляється з клавіатури. У цьому випадку ви повинні вручну змінити ці елементи
-                        керування, додавши <code>tabindex="-1"</code>, щоб вони не отримували фокус і
-                        <code>aria-disabled="disabled"</code>, щоб сигналізувати про своєму стані допоміжним
-                        технологіям.</p>
-                    <div class="bd-example w-25 ">
-                        <form>
-                            <fieldset disabled="">
-                                <legend>Disabled fieldset example</legend>
-                                <div class="mb-3">
-                                    <label for="disabledTextInput" class="form-label">Disabled input</label>
-                                    <input type="text" id="disabledTextInput" class="form-control"
-                                        placeholder="Disabled input">
+                <p>Додайте атрибут <code>disabled</code> у <code>&lt;fieldset&gt;</code>, щоб вимкнути всередині всі
+                    елементи керування. За замовчуванням браузери обробляють всі елементи керування власними формами
+                    (елементи <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> та
+                    <code>&lt;button&gt;</code>) усередині <code>&lt;fieldset disabled&gt;</code> як відключені,
+                    запобігаючи взаємодії з ними як з клавіатури, так і за допомогою миші.</p>
+                <p>Однак, якщо ваша форма також включає елементи користувача, схожі на кнопки, такі як <code>&lt;a
+                        class="btn btn-*"&gt;...&lt;/a&gt;</code>, то їм буде присвоєно тільки стиль
+                    подій-покажчиків <code>pointer-events: none</code>, що означає, що вони, як і раніше,
+                    фокусується і управляється з клавіатури. У цьому випадку ви повинні вручну змінити ці елементи
+                    керування, додавши <code>tabindex="-1"</code>, щоб вони не отримували фокус і
+                    <code>aria-disabled="disabled"</code>, щоб сигналізувати про своєму стані допоміжним
+                    технологіям.</p>
+                <div class="bd-example w-25 w-25 ">
+                    <form>
+                        <fieldset disabled="">
+                            <legend>Disabled fieldset example</legend>
+                            <div class="mb-3">
+                                <label for="disabledTextInput" class="form-label">Disabled input</label>
+                                <input type="text" id="disabledTextInput" class="form-control"
+                                    placeholder="Disabled input">
+                            </div>
+                            <div class="mb-3">
+                                <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                                <select id="disabledSelect" class="form-select">
+                                    <option>Disabled select</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck"
+                                        disabled="">
+                                    <label class="form-check-label" for="disabledFieldsetCheck">
+                                        Can't check this
+                                    </label>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                                    <select id="disabledSelect" class="form-select">
-                                        <option>Disabled select</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck"
-                                            disabled="">
-                                        <label class="form-check-label" for="disabledFieldsetCheck">
-                                            Can't check this
-                                        </label>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="highlight pt-5 ">
-                        <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class=" highlight pt-5 pt-5 ">
+                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">disabled</span><span class="p">&gt;</span>
           <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Disabled fieldset example<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
           <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-3"</span><span class="p">&gt;</span>
@@ -218,72 +241,53 @@
           <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
         <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
       <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span></code></pre>
-                    </div>
-
-                    <h2 id="accessibility">Доступність<a class="anchorjs-link" aria-label="Anchor"
-                            data-anchorjs-icon="#" href="#accessibility" style="padding-left: 0.375em; "></a></h2>
-
-                    <p>Переконайтеся, що всі елементи керування форми мають відповідні логічні імена, щоб їх
-                        найменування можна було донести до користувачів допоміжних технологій. Найпростіший спосіб
-                        досягти цього - використовувати елемент <code>&lt;label&gt;</code> або, у разі кнопок, включити
-                        досить описовий текст як частину вмісту <code>&lt;button&gt;...&lt;/button&gt;</code>.</p>
-                    <p>У ситуаціях, коли неможливо увімкнути видимий <code>&lt;label&gt;</code> або відповідний
-                        текстовий зміст, є альтернативні способи надання доступного імені, наприклад:</p>
-                    <ul>
-                        <li>Елементи <code>&lt;label&gt;</code> приховані за допомогою класу
-                            <code>.visually-hidden</code></li>
-                        <li>Вказівка ​​на існуючий елемент, який може діяти як мітка, використовуючи клас
-                            <code>aria-labelledby</code></li>
-                        <li>Надання атрибуту <code>title</code></li>
-                        <li>Для елемента явно встановити доступне ім'я за допомогою <code>aria-label</code></li>
-                    </ul>
-                    <p>Також можна використовувати атрибут <code>placeholder</code> як запасний варіант для доступного
-                        імені в елементах <code>&lt;input&gt;</code> та <code>&lt;textarea&gt;</code>. У цьому розділі
-                        наведено кілька підходів для різних випадків.</p>
-                    <p>Хоча використання візуально прихованого вмісту (<code>.visually-hidden</code>,
-                        <code>aria-label</code> і навіть <code>placeholder</code> який прихований якщо після форми йде
-                        вміст) буде корисно користувачам допоміжних технологій, але відсутність видимого тексту ярлика
-                        все ще може бути проблемою для деяких користувачів. Як правило, найкраще підходять видимі мітки
-                        як з точки зору доступності, так і зручності використання.</p>
-
-
                 </div>
+
+                <h2 id="accessibility">Доступність<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#"
+                        href="#accessibility" style="padding-left: 0.375em; "></a></h2>
+
+                <p>Переконайтеся, що всі елементи керування форми мають відповідні логічні імена, щоб їх
+                    найменування можна було донести до користувачів допоміжних технологій. Найпростіший спосіб
+                    досягти цього - використовувати елемент <code>&lt;label&gt;</code> або, у разі кнопок, включити
+                    досить описовий текст як частину вмісту <code>&lt;button&gt;...&lt;/button&gt;</code>.</p>
+                <p>У ситуаціях, коли неможливо увімкнути видимий <code>&lt;label&gt;</code> або відповідний
+                    текстовий зміст, є альтернативні способи надання доступного імені, наприклад:</p>
+                <ul>
+                    <li>Елементи <code>&lt;label&gt;</code> приховані за допомогою класу
+                        <code>.visually-hidden</code></li>
+                    <li>Вказівка ​​на існуючий елемент, який може діяти як мітка, використовуючи клас
+                        <code>aria-labelledby</code></li>
+                    <li>Надання атрибуту <code>title</code></li>
+                    <li>Для елемента явно встановити доступне ім'я за допомогою <code>aria-label</code></li>
+                </ul>
+                <p>Також можна використовувати атрибут <code>placeholder</code> як запасний варіант для доступного
+                    імені в елементах <code>&lt;input&gt;</code> та <code>&lt;textarea&gt;</code>. У цьому розділі
+                    наведено кілька підходів для різних випадків.</p>
+                <p>Хоча використання візуально прихованого вмісту (<code>.visually-hidden</code>,
+                    <code>aria-label</code> і навіть <code>placeholder</code> який прихований якщо після форми йде
+                    вміст) буде корисно користувачам допоміжних технологій, але відсутність видимого тексту ярлика
+                    все ще може бути проблемою для деяких користувачів. Як правило, найкраще підходять видимі мітки
+                    як з точки зору доступності, так і зручності використання.</p>
+
+
+            </div>
         </main>
 
         <main class="bd-main order-1">
             <div class="bd-intro ps-lg-4">
-               
-                    <h1 class="bd-title" id="content">Управление формой</h1>
-                </div>
-                <p class="bd-lead">Придание элементам управления текстовых формы, таким как <code>&lt;input&gt;</code> и
-                    <code>&lt;textarea&gt;</code> обновленных пользовательских стилей, размеров, состояний фокуса и
-                    многого другого.</p>
 
-
-            <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
-
-                <strong class="d-block h6 my-2 pb-2 border-bottom">На этой странице</strong>
-                <nav id="TableOfContents">
-                    <ul>
-                        <li><a href="#example">Пример</a></li>
-                        <li><a href="#sizing">Размеры</a></li>
-                        <li><a href="#disabled">Отключенная</a></li>
-                        <li><a href="#readonly">Только для чтения</a></li>
-                        <li><a href="#readonly-plain-text">Простой текст только для чтения</a></li>
-                        <li><a href="#file-input">Выбор файла</a></li>
-                    </ul>
-                </nav>
-
+                <h1 class="bd-title" id="content_form" style="text-align: center;">Керування формою</h1>
             </div>
-
-
+            <p class="bd-lead">Надання елементам керування текстових форм, таких як <code>&lt;input&gt;</code> та
+                <code>&lt;textarea&gt;</code> оновлених стилів користувача, розмірів, станів фокусу та
+                багато іншого.</p>
             <div class="bd-content ps-lg-4">
 
 
                 <h2 id="example">Пример<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
                         href="#example" style="padding-left: 0.375em;"></a></h2>
 
-                <div class="bd-example">
+                <div class="bd-example w-25 w-25 ">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
@@ -294,9 +298,7 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                 </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title=""
-                        data-bs-original-title="Копировать в буфер обмена">Копировать</button></div>
-                <div class="highlight">
+                <div class=" highlight pt-5 pt-5 ">
                     <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-3"</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"exampleFormControlInput1"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-label"</span><span class="p">&gt;</span>Email address<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"email"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control"</span> <span class="na">id</span><span class="o">=</span><span class="s">"exampleFormControlInput1"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"name@example.com"</span><span class="p">&gt;</span>
@@ -307,13 +309,13 @@
       <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
                 </div>
 
-                <h2 id="sizing">Размеры<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                <h2 id="sizing">Розміри<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
                         href="#sizing" style="padding-left: 0.375em;"></a></h2>
 
-                <p>Для создания форм заданной высоты используются классы, такие как <code>.form-control-lg</code> и
+                <p>Для створення форм заданої висоти використовуються класи, такі як <code>.form-control-lg</code> та
                     <code>.form-control-sm</code>.</p>
 
-                <div class="bd-example">
+                <div class="bd-example w-25">
                     <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"
                         aria-label=".form-control-lg example">
                     <input class="form-control" type="text" placeholder="Default input"
@@ -321,61 +323,57 @@
                     <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"
                         aria-label=".form-control-sm example">
                 </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title=""
-                        data-bs-original-title="Копировать в буфер обмена">Копировать</button></div>
-                <div class="highlight">
+
+                <div class=" highlight pt-5">
                     <pre
                         class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control form-control-lg"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">".form-control-lg"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">".form-control-lg example"</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"Default input"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"default input example"</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control form-control-sm"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">".form-control-sm"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">".form-control-sm example"</span><span class="p">&gt;</span></code></pre>
                 </div>
 
-                <h2 id="disabled">Отключенная<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                <h2 id="disabled">Вимкнена<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
                         href="#disabled" style="padding-left: 0.375em;"></a></h2>
+                <p>Додайте логічний атрибут <code>disabled</code> щоб він виглядав сірим і не діяли події
+                    покажчика.</p>
 
-                <p>Добавьте логический атрибут <code>disabled</code> чтобы он выглядел серым и не действовали события
-                    указателя.</p>
-
-                <div class="bd-example">
+                <div class="bd-example w-25">
                     <input class="form-control" type="text" placeholder="Disabled input"
                         aria-label="Disabled input example" disabled="">
                     <input class="form-control" type="text" placeholder="Disabled readonly input"
                         aria-label="Disabled input example" disabled="" readonly="">
                 </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title=""
-                        data-bs-original-title="Копировать в буфер обмена">Копировать</button></div>
-                <div class="highlight">
+
+                <div class=" highlight pt-5">
                     <pre
                         class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"Disabled input"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Disabled input example"</span> <span class="na">disabled</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"Disabled readonly input"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Disabled input example"</span> <span class="na">disabled</span> <span class="na">readonly</span><span class="p">&gt;</span></code></pre>
                 </div>
 
-                <h2 id="readonly">Только для чтения<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                <h2 id="readonly">Тільки для читання<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
                         href="#readonly" style="padding-left: 0.375em;"></a></h2>
 
-                <p>Добавьте атрибут булеанова <code>readonly</code> в форму ввода для предотвращения возможности
-                    изменения значения ввода. Такие типы ввода выглядят светлее (как неактивные формы ввода), но
-                    сохраняют стандартный курсор.</p>
-                <div class="bd-example">
+                <p>Додайте атрибут булеанова <code>readonly</code> у форму введення для запобігання можливості
+                    зміни значення введення. Такі типи введення виглядають світлішими (як неактивні форми введення), але
+                    зберігають стандартний курсор.</p>
+                <div class="bd-example w-25">
                     <input class="form-control" type="text" placeholder="Readonly input here..."
                         aria-label="readonly input example" readonly="">
                 </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title=""
-                        data-bs-original-title="Копировать в буфер обмена">Копировать</button></div>
-                <div class="highlight">
+
+                <div class=" highlight pt-5">
                     <pre
                         class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"Readonly input here..."</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"readonly input example"</span> <span class="na">readonly</span><span class="p">&gt;</span></code></pre>
                 </div>
 
-                <h2 id="readonly-plain-text">Простой текст только для чтения<a class="anchorjs-link "
+                <h2 id="readonly-plain-text">Простий текст тільки для читання<a class="anchorjs-link "
                         aria-label="Anchor" data-anchorjs-icon="#" href="#readonly-plain-text"
                         style="padding-left: 0.375em;"></a></h2>
 
-                <p>Если в ваших формах вы хотите стилизовать элементы <code>&lt;input readonly&gt;</code> как простой
-                    текст, используйте класс <code>.form-control-plaintext</code> для удаления оформления форм по
-                    умолчанию и сохранения правильных отступов.</p>
+                <p>Якщо у ваших формах ви хочете стилізувати елементи <code>&lt;input readonly&gt;</code> як простий
+                    текст, використовуйте клас <code>.form-control-plaintext</code> для видалення оформлення форм за
+                    замовчування та збереження правильних відступів.</p>
 
-                <div class="bd-example">
+                <div class="bd-example w-25">
                     <div class="mb-3 row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
@@ -390,9 +388,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title=""
-                        data-bs-original-title="Копировать в буфер обмена">Копировать</button></div>
-                <div class="highlight">
+
+                <div class=" highlight pt-5">
                     <pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-3 row"</span><span class="p">&gt;</span>
           <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"staticEmail"</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-sm-2 col-form-label"</span><span class="p">&gt;</span>Email<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
           <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-sm-10"</span><span class="p">&gt;</span>
@@ -406,7 +403,7 @@
           <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
                 </div>
-                <div class="bd-example">
+                <div class="bd-example w-25">
                     <form class="row g-3">
                         <div class="col-auto">
                             <label for="staticEmail2" class="visually-hidden">Email</label>
@@ -422,9 +419,8 @@
                         </div>
                     </form>
                 </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title=""
-                        data-bs-original-title="Копировать в буфер обмена">Копировать</button></div>
-                <div class="highlight">
+
+                <div class=" highlight pt-5">
                     <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">"row g-3"</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-auto"</span><span class="p">&gt;</span>
           <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"staticEmail2"</span> <span class="na">class</span><span class="o">=</span><span class="s">"visually-hidden"</span><span class="p">&gt;</span>Email<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
@@ -440,10 +436,10 @@
       <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span></code></pre>
                 </div>
 
-                <h2 id="file-input">Выбор файла<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                <h2 id="file-input">Вибір файлу<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
                         href="#file-input" style="padding-left: 0.375em;"></a></h2>
 
-                <div class="bd-example">
+                <div class="bd-example w-25 w-50">
                     <div class="mb-3">
                         <label for="formFile" class="form-label">Default file input example</label>
                         <input class="form-control" type="file" id="formFile">
@@ -465,9 +461,8 @@
                         <input class="form-control form-control-lg" id="formFileLg" type="file">
                     </div>
                 </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title=""
-                        data-bs-original-title="Копировать в буфер обмена">Копировать</button></div>
-                <div class="highlight">
+
+                <div class=" highlight pt-5">
                     <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-3"</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"formFile"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-label"</span><span class="p">&gt;</span>Default file input example<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control"</span> <span class="na">type</span><span class="o">=</span><span class="s">"file"</span> <span class="na">id</span><span class="o">=</span><span class="s">"formFile"</span><span class="p">&gt;</span>
@@ -493,8 +488,414 @@
             </div>
         </main>
 
+        <main class="bd-main order-1">
+            <div class="bd-intro ps-lg-4">
+                <h1 class="bd-title" id="content_list" style="text-align: center;">Выпадающие списки</h1>
+            </div>
+            <div class="bd-content ps-lg-4">
+
+
+                <h2 id="default_list">Настройки по умолчанию<a class="anchorjs-link " aria-label="Anchor"
+                        data-anchorjs-icon="#" href="#default" style="padding-left: 0.375em;"></a></h2>
+                <p>Для настраиваемых меню <code>&lt;select&gt;</code> требуется указать только настраиваемый
+                    класс<code>.form-select</code> для запуска настраиваемых стилей. Пользовательские стили ограничены
+                    начальным внешним видом <code>&lt;select&gt;</code> и не могут изменять <code>&lt;option&gt;</code>
+                    из-за ограничений браузера.</p>
+
+                <div class="bd-example w-25">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected="">Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="highlight pt-5">
+                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-select"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Default select example"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;</span>Open this select menu<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"1"</span><span class="p">&gt;</span>One<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>Two<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"3"</span><span class="p">&gt;</span>Three<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2 id="sizing_list">Размер<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                        href="#sizing" style="padding-left: 0.375em;"></a></h2>
+                <p>Вы также можете выбирать из небольших и больших пользовательских выборок для соответствия текстового
+                    ввода аналогичного размера.</p>
+
+                <div class="bd-example w-25">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option selected="">Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected="">Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="highlight pt-5">
+                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-select form-select-lg mb-3"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">".form-select-lg example"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;</span>Open this select menu<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"1"</span><span class="p">&gt;</span>One<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>Two<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"3"</span><span class="p">&gt;</span>Three<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+      
+      <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-select form-select-sm"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">".form-select-sm example"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;</span>Open this select menu<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"1"</span><span class="p">&gt;</span>One<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>Two<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"3"</span><span class="p">&gt;</span>Three<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>Также поддерживается множественный атрибут <code>multiple</code>:</p>
+
+                <div class="bd-example w-25">
+                    <select class="form-select" multiple="" aria-label="multiple select example">
+                        <option selected="">Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="highlight pt-5">
+                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-select"</span> <span class="na">multiple</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"multiple select example"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;</span>Open this select menu<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"1"</span><span class="p">&gt;</span>One<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>Two<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"3"</span><span class="p">&gt;</span>Three<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>Как и атрибут size <code>size</code>:</p>
+
+                <div class="bd-example w-25">
+                    <select class="form-select" size="3" aria-label="size 3 select example">
+                        <option selected="">Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="highlight pt-5">
+                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-select"</span> <span class="na">size</span><span class="o">=</span><span class="s">"3"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"size 3 select example"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;</span>Open this select menu<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"1"</span><span class="p">&gt;</span>One<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>Two<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"3"</span><span class="p">&gt;</span>Three<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2 id="disabled_list">Отключено<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                        href="#disabled" style="padding-left: 0.375em;"></a></h2>
+
+                <p>Добавьте логический <code>disabled</code> для придания ему неактивного вида и удаления события
+                    указателя.</p>
+
+                <div class="bd-example w-25">
+                    <select class="form-select" aria-label="Disabled select example" disabled="">
+                        <option selected="">Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="highlight pt-5">
+                    <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-select"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Disabled select example"</span> <span class="na">disabled</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;</span>Open this select menu<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"1"</span><span class="p">&gt;</span>One<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>Two<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"3"</span><span class="p">&gt;</span>Three<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <main class="bd-main order-1">
+                    <div class="bd-intro ps-lg-4" style="text-align: center;">
+                        <h1 class="bd-title" id="content_box">Чекбоксы (флажки) и радиокнопки</h1>
+                        <p class="bd-lead">Создавайте кросс-браузерные и кросс-платформенные чекбоксы и радиокнопки с
+                            нашим полностью переписанными компонентами.</p>
+                    </div>
+
+
+
+                    <div class="bd-content ps-lg-4">
+
+
+                        <h2 id="approach">Подход<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                                href="#approach" style="padding-left: 0.375em;"></a></h2>
+                        <p>Чекбоксы и радиокнопки в браузере по умолчанию теперь заменяются с помощью
+                            <code>.form-check</code>, цель которого – в улучшении их расположения и «поведения» их
+                            элементов HTML. Чекбоксы существуют для выбора одного или нескольких параметров из списка, а
+                            радиокнопки - одного.</p>
+                        <p>Структурно наши <code>&lt;input&gt;</code> и <code>&lt;label&gt;</code> являются
+                            одноуровневыми элементами, в отличие от <code>&lt;input&gt;</code> внутри
+                            <code>&lt;label&gt;</code>. Это немного более сложно, так как вы должны указать
+                            <code>id</code> и <code>for</code>, чтобы связать <code>&lt;input&gt;</code> и
+                            <code>&lt;label&gt;</code>. Мы используем родственный селектор (<code>~</code>) для всех
+                            наших состояний <code>&lt;input&gt;</code>, например: <code>:checked</code> или
+                            <code>:disabled</code>. В сочетании с классом <code>.form-check-label</code> мы можем легко
+                            стилизовать текст для каждого элемента на основе состояния <code>&lt;input&gt;</code>.</p>
+                        <p>В наших проверках используются пользовательские значки Bootstrap для обозначения отмеченных
+                            или неопределенных состояний.</p>
+
+                        <h2 id="checks">Чекбоксы (Флажки)<a class="anchorjs-link " aria-label="Anchor"
+                                data-anchorjs-icon="#" href="#checks" style="padding-left: 0.375em;"></a></h2>
+                        <div class="bd-example w-25">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                    checked="">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                        </div>
+                        <div class="highlight pt-5">
+                            <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexCheckDefault"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexCheckDefault"</span><span class="p">&gt;</span>
+      Default checkbox
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexCheckChecked"</span> <span class="na">checked</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexCheckChecked"</span><span class="p">&gt;</span>
+      Checked checkbox
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                        </div>
+
+                        <h3 id="indeterminate">Неопределенный<a class="anchorjs-link " aria-label="Anchor"
+                                data-anchorjs-icon="#" href="#indeterminate" style="padding-left: 0.375em;"></a></h3>
+                        <p>Стандартные чекбоксы могут использовать псевдокласс <code>:indeterminate</code>, заданный
+                            вручную через JavaScript (т.к. нет в HTML атрибута для его спецификации).</p>
+                        <div class="bd-example w-25 bd-example w-25-indeterminate">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label" for="flexCheckIndeterminate">
+                                    Indeterminate checkbox
+                                </label>
+                            </div>
+                        </div>
+                        <div class="highlight pt-5">
+                            <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexCheckIndeterminate"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexCheckIndeterminate"</span><span class="p">&gt;</span>
+      Indeterminate checkbox
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                        </div>
+
+                        <h3 id="disabled">Деактивированные<a class="anchorjs-link " aria-label="Anchor"
+                                data-anchorjs-icon="#" href="#disabled" style="padding-left: 0.375em;"></a></h3>
+                        <p>Добавьте булеан <code>disabled</code> в <code>&lt;input&gt;</code> и стандартный индикатор и
+                            лейбл-описание автоматически соответственно стилизуются.</p>
+                        <div class="bd-example w-25">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled"
+                                    disabled="">
+                                <label class="form-check-label" for="flexCheckDisabled">
+                                    Disabled checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled"
+                                    checked="" disabled="">
+                                <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                    Disabled checked checkbox
+                                </label>
+                            </div>
+                        </div>
+                        <div class="highlight pt-5">
+                            <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexCheckDisabled"</span> <span class="na">disabled</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexCheckDisabled"</span><span class="p">&gt;</span>
+      Disabled checkbox
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexCheckCheckedDisabled"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexCheckCheckedDisabled"</span><span class="p">&gt;</span>
+      Disabled checked checkbox
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                        </div>
+
+                        <h2 id="radios">Радиокнопки<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                                href="#radios" style="padding-left: 0.375em;"></a></h2>
+                        <div class="bd-example w-25">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Default radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked="">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Default checked radio
+                                </label>
+                            </div>
+                        </div>
+                        <div class="highlight pt-5">
+                            <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"flexRadioDefault"</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexRadioDefault1"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexRadioDefault1"</span><span class="p">&gt;</span>
+      Default radio
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"flexRadioDefault"</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexRadioDefault2"</span> <span class="na">checked</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexRadioDefault2"</span><span class="p">&gt;</span>
+      Default checked radio
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                        </div>
+
+                        <h3 id="disabled-1">Деактивированные<a class="anchorjs-link " aria-label="Anchor"
+                                data-anchorjs-icon="#" href="#disabled-1" style="padding-left: 0.375em;"></a></h3>
+                        <p>Добавьте атрибут <code>disabled</code> и для связанных тегов <code>&lt;label&gt;</code> будет
+                            автоматически применен стиль, соответствующий более светлому цвету, чтобы обозначить
+                            соответствующее состояние ввода.</p>
+                        <div class="bd-example w-25">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                                    id="flexRadioDisabled" disabled="">
+                                <label class="form-check-label" for="flexRadioDisabled">
+                                    Disabled radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                                    id="flexRadioCheckedDisabled" checked="" disabled="">
+                                <label class="form-check-label" for="flexRadioCheckedDisabled">
+                                    Disabled checked radio
+                                </label>
+                            </div>
+                        </div>
+                        <div class="highlight pt-5">
+                            <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"flexRadioDisabled"</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexRadioDisabled"</span> <span class="na">disabled</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexRadioDisabled"</span><span class="p">&gt;</span>
+      Disabled radio
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"flexRadioDisabled"</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexRadioCheckedDisabled"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexRadioCheckedDisabled"</span><span class="p">&gt;</span>
+      Disabled checked radio
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                        </div>
+
+                        <h2 id="switches">Переключатели<a class="anchorjs-link " aria-label="Anchor"
+                                data-anchorjs-icon="#" href="#switches" style="padding-left: 0.375em;"></a></h2>
+                        <p>Переключатель имеет разметку настраиваемого флажка, но для визуализации переключателя
+                            использует класс <code>.form-switch</code>. Рассмотрите возможность использования
+                            <code>role="switch"</code>, чтобы более точно передать характер управления вспомогательным
+                            технологиям, которые поддерживают эту роль. В старых вспомогательных технологиях это будет
+                            просто объявлено как обычный флажок в качестве запасного варианта. Коммутаторы также
+                            поддерживают атрибут <code>disabled</code>.</p>
+                        <div class="bd-example w-25">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Ввод флажка переключателя
+                                    по умолчанию</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked="">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Выбран флажок переключателя
+                                    ввода</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDisabled" disabled="">
+                                <label class="form-check-label" for="flexSwitchCheckDisabled">Отключено переключение
+                                    флажка ввода</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckCheckedDisabled" checked="" disabled="">
+                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Отключено
+                                    переключение флажка в поле ввода</label>
+                            </div>
+                        </div>
+                        <div class="highlight pt-5">
+                            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check form-switch"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">role</span><span class="o">=</span><span class="s">"switch"</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexSwitchCheckDefault"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexSwitchCheckDefault"</span><span class="p">&gt;</span>Ввод флажка переключателя по умолчанию<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check form-switch"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">role</span><span class="o">=</span><span class="s">"switch"</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexSwitchCheckChecked"</span> <span class="na">checked</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexSwitchCheckChecked"</span><span class="p">&gt;</span>Выбран флажок переключателя ввода<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check form-switch"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">role</span><span class="o">=</span><span class="s">"switch"</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexSwitchCheckDisabled"</span> <span class="na">disabled</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexSwitchCheckDisabled"</span><span class="p">&gt;</span>Отключено переключение флажка ввода<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check form-switch"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-input"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">role</span><span class="o">=</span><span class="s">"switch"</span> <span class="na">id</span><span class="o">=</span><span class="s">"flexSwitchCheckCheckedDisabled"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-check-label"</span> <span class="na">for</span><span class="o">=</span><span class="s">"flexSwitchCheckCheckedDisabled"</span><span class="p">&gt;</span>Отключено переключение флажка в поле ввода<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                        </div>
+                        <main class="bd-main order-1">
+                                <h1 class="bd-title" style="text-align: center;" id="content">Диапазон</h1>
+                              </div>
+                              <p class="bd-lead" style="text-align: center;" >Используйте стилизованые возможности ввода диапазона данных для одинакового отображения во всех браузерах.</p>
+                      <div class="bd-content ps-lg-4">
+                      <h2 id="overview_step">Общие сведения<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#overview" style="padding-left: 0.375em;"></a></h2>
+                      <p>Установите горизонтальные прокручиваемые входы диапазона с использованием <code>&lt;input type="range"&gt;</code> применяя <code>.form-range</code>. Дорожка (фон) и ползунок (значение) имеют одинаковый стиль во всех браузерах. Поскольку только Firefox поддерживает «заполнение» своего трека слева или справа как средство визуальной индикации прогресса, то в настоящее время мы его не поддерживаем.</p>
+                      <div class="bd-example w-25">
+                      <label for="customRange1" class="form-label">Example range</label>
+                      <input type="range" class="form-range" id="customRange1">
+                      </div><div class="highlight pt-5"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"customRange1"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-label"</span><span class="p">&gt;</span>Example range<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"range"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-range"</span> <span class="na">id</span><span class="o">=</span><span class="s">"customRange1"</span><span class="p">&gt;</span></code></pre></div>
+                      
+                      <h2 id="disabled_step">Отключено<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#disabled" style="padding-left: 0.375em;"></a></h2>
+                      <p>Добавьте логический атрибут <code>disabled</code> чтобы отображалось серым и не действовало.</p>
+                      
+                      <div class="bd-example w-25">
+                      <label for="disabledRange" class="form-label">Disabled range</label>
+                      <input type="range" class="form-range" id="disabledRange" disabled="">
+                      </div><div class="highlight pt-5"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"disabledRange"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-label"</span><span class="p">&gt;</span>Disabled range<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"range"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-range"</span> <span class="na">id</span><span class="o">=</span><span class="s">"disabledRange"</span> <span class="na">disabled</span><span class="p">&gt;</span></code></pre></div>
+                      
+                      <h2 id="min-and-max">Минимальные и максимальные значения<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#min-and-max" style="padding-left: 0.375em;"></a></h2>
+                      <p>Входные параметры диапазона имеют неявные значения для <code>min</code> и <code>max</code> — <code>0</code> и <code>100</code> соответственно. Вы можете указать свои значения для атрибутов <code>min</code> и <code>max</code>.</p>
+                      <div class="bd-example w-25">
+                      <label for="customRange2" class="form-label">Example range</label>
+                      <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                      </div><div class="highlight pt-5"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"customRange2"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-label"</span><span class="p">&gt;</span>Example range<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"range"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-range"</span> <span class="na">min</span><span class="o">=</span><span class="s">"0"</span> <span class="na">max</span><span class="o">=</span><span class="s">"5"</span> <span class="na">id</span><span class="o">=</span><span class="s">"customRange2"</span><span class="p">&gt;</span></code></pre></div>
+                      
+                      <h2 id="steps">Шаг<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#steps" style="padding-left: 0.375em;"></a></h2>
+                      <p>По умолчанию значения диапазона «привязываются» к целочисленным значениям. Вы можете указать свое значение шага <code>step</code>. В приведенном ниже примере мы удваиваем количество шагов, используя <code>step="0.5"</code>.</p>
+                      <div class="bd-example w-25">
+                      <label for="customRange3" class="form-label">Example range</label>
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                      </div><div class="highlight pt-5"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"customRange3"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-label"</span><span class="p">&gt;</span>Example range<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"range"</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-range"</span> <span class="na">min</span><span class="o">=</span><span class="s">"0"</span> <span class="na">max</span><span class="o">=</span><span class="s">"5"</span> <span class="na">step</span><span class="o">=</span><span class="s">"0.5"</span> <span class="na">id</span><span class="o">=</span><span class="s">"customRange3"</span><span class="p">&gt;</span></code></pre></div>
+
+            </div>
+        </main>
+
         <!-- footer -->
-        <div style="padding-top: 500px;"></div>
         <div class="nbmain" style="display: flex; justify-content: center;">
             <nav aria-label="..." style="display: flex;">
                 <ul class="pagination">
