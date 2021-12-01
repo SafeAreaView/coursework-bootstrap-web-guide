@@ -141,44 +141,44 @@ const results =
 //Массив с вопросами
 const questions = 
 [
-	new Question("Bootstrap - це технологія, яка дозволяє тобі практично не чіпати які файли?", 
+	new Question("Що потрібно прописати щоб створити форму у яку можливо загрузити файл?", 
 	[
-		new Answer("HTML", 0),
-		new Answer("JS", 0),
-		new Answer("CSS", 1),
-		new Answer("Node.js", 0)
+		new Answer('input class="form-control" type="file" id="formFile"input type="file" id="formFile"', 1),
+		new Answer('input type="password" id="inputPassword6"', 0),
+		new Answer('input type="password" id="inputPassword6" ', 0),
+		new Answer('Ні один з варіантів', 0)
 	]),
 
-	new Question("Що потрібно прописати щоб контейнер був на всю ширину екрана незалежно від розширення?", 
+	new Question("Який тип відповідає за створення Чекбоксу (прапорця)?", 
 	[
-		new Answer(".container-sm", 0),
-		new Answer(".container-md", 0),
-		new Answer(".container-fluid", 1),
-		new Answer(".container-xxl", 0)
+		new Answer('type="button"', 0),
+		new Answer('type="radio"', 0),
+		new Answer('type="checkbox"', 1),
+		new Answer(`type="file"`, 0)
 	]),
 
-	new Question("Скільки чутливих точок максимально підтримує сіткова система Bootstrap?", 
+	new Question("За що відповідае атрибут textarea?", 
 	[
-		new Answer("12", 0),
-		new Answer("6", 1),
-		new Answer("4", 0),
-		new Answer("9", 0)
+		new Answer("Поле для завантаження файлу", 0),
+		new Answer("Поле для вводу тексту", 1),
+		new Answer("Поле для паролю", 0),
+		new Answer("Поле для банківскьої карти", 0)
 	]),
 
-	new Question("Яку систему позиціонування використовує Bootstrap?", 
+	new Question('input type="range" створе який обьект', 
 	[
-		new Answer("flexbox", 1),
-		new Answer("grid.css", 0),
-		new Answer("float", 0),
-		new Answer("Ні одну з перерахованих", 0)
+		new Answer("Діапазон", 1),
+		new Answer("Випадаючий список", 0),
+		new Answer("Чекбокс", 0),
+		new Answer("Допоміжний текст", 0)
 	]),
 
-	new Question("Ієрархія сітки Bootstrap переходить від контейнера до..?", 
+	new Question("У який тег потрыбно вставити код щоб він коректно відображався на сторінці?", 
 	[
-		new Answer("До материнського елементу", 0),
-		new Answer("Рядку стовпця", 1),
-		new Answer("Не переходить", 0),
-		new Answer("До колонки", 0)
+		new Answer('у тег div ', 0),
+		new Answer('у тег code', 1),
+		new Answer('у тег span', 0),
+		new Answer('у тег p', 0)
 	])
 ];
 
