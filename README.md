@@ -1,2 +1,3 @@
 # Coursework
-Курсовая работа на тему Веб довiдник по Bootstrap
+Small coursework  bootstrap web guide
+Technologies: HTML CSS JS +Bootstrap
